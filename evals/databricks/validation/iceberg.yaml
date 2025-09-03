@@ -1,0 +1,299 @@
+url: https://docs.databricks.com/aws/en/iceberg/
+raw_content: "<!doctype html><html lang=en dir=ltr class=\"docs-wrapper plugin-docs\
+  \ plugin-id-default docs-version-current docs-doc-page docs-doc-id-iceberg/index\"\
+  \ data-has-hydrated=false><meta charset=UTF-8><meta name=generator content=\"Docusaurus\
+  \ v3.6.3\"><title data-rh=true>What is Apache Iceberg in Databricks? | Databricks\
+  \ on AWS</title><meta data-rh=true name=viewport content=\"width=device-width,initial-scale=1.0\"\
+  ><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true\
+  \ property=og:image content=https://docs.databricks.com/aws/en/img/og-image.png><meta\
+  \ data-rh=true name=twitter:image content=https://docs.databricks.com/aws/en/img/og-image.png><meta\
+  \ data-rh=true property=og:url content=https://docs.databricks.com/aws/en/iceberg/><meta\
+  \ data-rh=true property=og:locale content=en><meta data-rh=true property=og:locale:alternate\
+  \ content=ja><meta data-rh=true property=og:locale:alternate content=pt><meta data-rh=true\
+  \ name=docusaurus_locale content=en><meta data-rh=true name=docsearch:language content=en><meta\
+  \ data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag\
+  \ content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta\
+  \ data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta\
+  \ data-rh=true property=og:title content=\"What is Apache Iceberg in Databricks?\
+  \ | Databricks on AWS\"><meta data-rh=true name=description content=\"Learn about\
+  \ the Apache Iceberg table format and how it is supported on Databricks.\"><meta\
+  \ data-rh=true property=og:description content=\"Learn about the Apache Iceberg\
+  \ table format and how it is supported on Databricks.\"><link data-rh=true rel=icon\
+  \ href=/aws/en/img/favicon.ico><link data-rh=true rel=canonical href=https://docs.databricks.com/aws/en/iceberg/><link\
+  \ data-rh=true rel=alternate href=https://docs.databricks.com/aws/en/iceberg/ hreflang=en><link\
+  \ data-rh=true rel=alternate href=https://docs.databricks.com/aws/en/ja/iceberg/\
+  \ hreflang=ja><link data-rh=true rel=alternate href=https://docs.databricks.com/aws/en/pt/iceberg/\
+  \ hreflang=pt><link data-rh=true rel=alternate href=https://docs.databricks.com/aws/en/iceberg/\
+  \ hreflang=x-default><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({\"\
+  gtm.start\":new Date().getTime(),event:\"gtm.js\"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src=\"\
+  https://www.googletagmanager.com/gtm.js?id=\"+r+(\"dataLayer\"!=n?\"&l=\"+n:\"\"\
+  ),d.parentNode.insertBefore(g,d)}(window,document,\"script\",\"dataLayer\",\"GTM-TWTKQQ\"\
+  )</script><link rel=stylesheet href=/aws/en/assets/css/styles.6776715e.css><script\
+  \ src=/aws/en/assets/js/runtime~main.ec9796f6.js defer></script><script src=/aws/en/assets/js/main.14727540.js\
+  \ defer></script><body class=navigation-with-keyboard><noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-TWTKQQ\"\
+  \ height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>\n\n\
+  <script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get(\"\
+  docusaurus-theme\")}catch(t){}}()||function(){try{return window.localStorage.getItem(\"\
+  theme\")}catch(t){}}();t=null!==e?e:\"light\",document.documentElement.setAttribute(\"\
+  data-theme\",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith(\"\
+  docusaurus-data-\")){var a=t.replace(\"docusaurus-data-\",\"data-\");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div\
+  \ id=__docusaurus><div role=region aria-label=\"Skip to main content\"><a class=skipToContent_TB0u\
+  \ href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main\
+  \ class=\"navbar navbar--fixed-top\"><div class=navbar__inner><div class=navbar__items><button\
+  \ aria-label=\"Toggle navigation bar\" aria-expanded=false class=\"navbar__toggle\
+  \ clean-btn\" type=button><svg width=30 height=30 viewBox=\"0 0 30 30\" aria-hidden=true><path\
+  \ stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d=\"\
+  M4 7h22M4 15h22M4 23h22\"/></svg></button><a href=https://www.databricks.com target=_blank\
+  \ rel=\"noopener noreferrer\" class=navbar__brand><div class=navbar__logo><img src=/aws/en/img/logo.svg\
+  \ alt=\"Databricks Logo\" class=\"themedComponent_hRIn themedComponent--light_H5vX\"\
+  ><img src=/aws/en/img/logo-dark.svg alt=\"Databricks Logo\" class=\"themedComponent_hRIn\
+  \ themedComponent--dark_aLeF\"></div></a><a aria-current=page class=\"navbar__item\
+  \ navbar__link navbar__link--active\" href=/aws/en/getting-started/>Get started</a><a\
+  \ aria-current=page class=\"navbar__item navbar__link navbar__link--active\" href=/aws/en/developers/>Developers</a><a\
+  \ aria-current=page class=\"navbar__item navbar__link navbar__link--active\" href=/aws/en/reference/api>Reference</a><a\
+  \ aria-current=page class=\"navbar__item navbar__link navbar__link--active\" href=/aws/en/release-notes/>Release\
+  \ notes</a><div class=\"navbar__item dropdown dropdown--hoverable\"><a href=# aria-haspopup=true\
+  \ aria-expanded=false role=button class=navbar__link>Resources</a><ul class=dropdown__menu><li><a\
+  \ href=https://help.databricks.com target=_blank rel=\"noopener noreferrer\" class=dropdown__link>Support<svg\
+  \ width=12 height=12 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><li><a href=https://kb.databricks.com\
+  \ target=_blank rel=\"noopener noreferrer\" class=dropdown__link>Knowledge Base<svg\
+  \ width=12 height=12 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><li><a href=https://community.databricks.com\
+  \ target=_blank rel=\"noopener noreferrer\" class=dropdown__link>Community<svg width=12\
+  \ height=12 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><li><a href=https://customer-academy.databricks.com\
+  \ target=_blank rel=\"noopener noreferrer\" class=dropdown__link>Training<svg width=12\
+  \ height=12 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><li><a href=\"\
+  mailto:doc-feedback@databricks.com?subject=Documentation Feedback\" target=_blank\
+  \ rel=\"noopener noreferrer\" class=dropdown__link>Feedback<svg width=12 height=12\
+  \ aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path fill=currentColor\
+  \ d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828\
+  \ 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a></ul></div></div><div class=\"\
+  navbar__items navbar__items--right\"><div class=\"toggle_SEEL colorModeToggle_zm0l\"\
+  ><button class=\"clean-btn toggleButton_xR62 toggleButtonDisabled_mwDw\" type=button\
+  \ disabled title=\"Switch between dark and light mode (currently light mode)\" aria-label=\"\
+  Switch between dark and light mode (currently light mode)\" aria-live=polite aria-pressed=false><svg\
+  \ viewBox=\"0 0 24 24\" width=24 height=24 class=lightToggleIcon_rwxp><path fill=currentColor\
+  \ d=\"M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5\
+  \ S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z\
+  \ M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z\
+  \ M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z\
+  \ M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z\
+  \ M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41\
+  \ L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41\
+  \ s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06\
+  \ c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z\"/></svg><svg viewBox=\"\
+  0 0 24 24\" width=24 height=24 class=darkToggleIcon_sZjN><path fill=currentColor\
+  \ d=\"M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19\
+  \ c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36\
+  \ c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z\"\
+  /></svg></button></div><div class=navbarSearchContainer_bHWz></div></div></div><div\
+  \ class=navbar__inner><div class=navbar__items><style data-emotion=\"css 1tpdvqq\"\
+  >.css-1tpdvqq{width:240px}</style><div class=\"searchBar css-1tpdvqq\" id=auto><div\
+  \ ng-controller=SearchautoController><div bind-html-compile=autocompleteHtml></div></div></div></div><div\
+  \ class=\"navbar__items navbar__items--right\"><div class=\"navbar__item dropdown\
+  \ dropdown--hoverable dropdown--right\"><a href=# aria-haspopup=true aria-expanded=false\
+  \ role=button class=navbar__link>English</a><ul class=dropdown__menu><li><a class=dropdown__link\
+  \ lang=en href=/aws/en/iceberg/>English</a><li><a class=dropdown__link lang=ja href=/aws/en/aws/ja/iceberg/>\xE6\
+  \x97\xA5\xE6\x9C\xAC\xE8\xAA\x9E</a><li><a class=dropdown__link lang=pt href=/aws/en/aws/pt/iceberg/>Portugu\xC3\
+  \xAAs</a></ul></div><div class=\"navbar__item dropdown dropdown--hoverable dropdown--right\"\
+  ><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link>AWS</a><ul\
+  \ class=dropdown__menu><li><a href=https://learn.microsoft.com/azure/databricks/iceberg/\
+  \ rel=\"noopener noreferrer\" class=dropdown__link>Azure<svg width=12 height=12\
+  \ aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path fill=currentColor\
+  \ d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828\
+  \ 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><li><a class=dropdown__link href=/aws/en/gcp/en/iceberg/>GCP</a><li><a\
+  \ class=dropdown__link href=/aws/en/sap>SAP</a></ul></div><style data-emotion=\"\
+  css 143a876\">.css-143a876{color:#fff;text-transform:uppercase;background-color:#2272b4;align-items:center;height:100%;font-size:90%;font-weight:600;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:0\
+  \ .8rem!important}.css-143a876:hover{color:#fff;background-color:#0e538b;-webkit-text-decoration:none;text-decoration:none}</style><a\
+  \ class=\"tryDatabricksLink css-143a876\" href=\"https://signup.databricks.com/?dbx_source=docs\"\
+  \ target=_blank rel=noreferrer>Try Databricks</a></div></div><div role=presentation\
+  \ class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback\
+  \ class=\"main-wrapper mainWrapper_zemO\"><div class=docsWrapper_klhP><button aria-label=\"\
+  Scroll back to top\" class=\"clean-btn theme-back-to-top-button backToTopButton_oGYd\"\
+  \ type=button></button><div class=docRoot_Te_T><aside class=\"theme-doc-sidebar-container\
+  \ docSidebarContainer_nExd\"><div class=sidebarViewport_fPew></div></aside><main\
+  \ class=docMainContainer_Bfa7><div class=\"container padding-top--md padding-bottom--lg\"\
+  ><div class=row><div class=\"col docItemCol_r8C9\"><div class=docItemContainer_ct0A><article><style\
+  \ data-emotion=\"css 1rizvmm\">.css-1rizvmm{justify-content:space-between;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative}.css-1rizvmm\
+  \ .breadcrumbs{-webkit-flex:1;-ms-flex:1;flex:1;min-width:0}</style><div class=css-1rizvmm><nav\
+  \ class=\"theme-doc-breadcrumbs breadcrumbsContainer_djwJ\" aria-label=Breadcrumbs><ul\
+  \ class=breadcrumbs itemscope itemtype=https://schema.org/BreadcrumbList><li class=breadcrumbs__item><a\
+  \ aria-label=\"Home page\" class=breadcrumbs__link href=/aws/en/><svg viewBox=\"\
+  0 0 24 24\" class=breadcrumbHomeIcon_hOxA><path d=\"M10 19v-5h4v5c0 .55.45 1 1 1h3c.55\
+  \ 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36\
+  \ 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z\" fill=currentColor\
+  \ /></svg></a><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem\
+  \ class=breadcrumbs__item><a class=breadcrumbs__link itemprop=item href=/aws/en/tables/><span\
+  \ itemprop=name>Tables</span></a><meta itemprop=position content=1><li itemscope\
+  \ itemprop=itemListElement itemtype=https://schema.org/ListItem class=\"breadcrumbs__item\
+  \ breadcrumbs__item--active\"><span class=breadcrumbs__link itemprop=name>Iceberg</span><meta\
+  \ itemprop=position content=2></ul></nav></div><div class=\"tocCollapsible_MlSb\
+  \ theme-doc-toc-mobile tocMobile_P4AZ\"><button type=button class=\"clean-btn tocCollapsibleButton_YzX8\"\
+  >On this page</button></div><div class=\"theme-doc-markdown markdown\"><header><h1>What\
+  \ is <!-- -->Apache Iceberg<!-- --> in <!-- -->Databricks<!-- -->?</h1></header>\n\
+  <div class=\"theme-admonition theme-admonition-info admonition_ZQrk alert alert--info\"\
+  ><div class=admonitionHeading_kIkl><span class=admonitionIcon_LeTk><svg viewBox=\"\
+  0 0 14 16\"><path fill-rule=evenodd d=\"M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7\
+  \ 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14\
+  \ 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z\"/></svg></span>Preview</div><div\
+  \ class=admonitionContent_dv_9><p>Unity Catalog<!-- -->-managed <!-- -->Apache Iceberg<!--\
+  \ --> tables are available in <a href=/aws/en/release-notes/release-types>Public\
+  \ Preview</a> in <!-- -->Databricks Runtime<!-- --> 16.4 LTS and above. Foreign\
+  \ Iceberg tables are also in Public Preview in <!-- -->Databricks Runtime<!-- -->\
+  \ 16.4 LTS and above.</div></div>\n<p><a href=https://iceberg.apache.org/ target=_blank\
+  \ rel=\"noopener noreferrer\">Apache Iceberg</a> is an open source table format\
+  \ for analytics workloads. It supports features like schema evolution, time travel,\
+  \ and hidden partitioning. Like Delta Lake, Iceberg provides an abstraction layer\
+  \ that enables ACID transactions on data stored in object storage. <!-- -->Databricks<!--\
+  \ --> supports Iceberg tables that use the Apache Parquet file format. Iceberg maintains\
+  \ atomicity and consistency by writing new metadata files for each table change.</p>\n\
+  <p>An Iceberg catalog is the top-level layer of the Iceberg table architecture.\
+  \ It handles operations like creating, dropping, and renaming tables. Its main responsibility\
+  \ is to provide the current metadata when a table is loaded. <!-- -->Databricks<!--\
+  \ --> supports Iceberg tables managed by:</p>\n<ul>\n<li><a href=/aws/en/data-governance/unity-catalog/>Unity\
+  \ Catalog</a></li>\n<li><a href=/aws/en/query-federation/foreign-catalogs>Foreign\
+  \ catalogs</a>, such as AWS Glue, Hive Metastore, or Snowflake Horizon Catalog</li>\n\
+  </ul>\n<p>All Iceberg tables in <!-- -->Databricks<!-- --> follow the open Iceberg\
+  \ table format specification. See the <a href=https://iceberg.apache.org/spec/ target=_blank\
+  \ rel=\"noopener noreferrer\">Iceberg table spec</a>.</p>\n<h2 class=\"anchor anchorWithStickyNavbar_MgEv\"\
+  \ id=create-iceberg-tables-in-unity-catalog>Create Iceberg tables in <!-- -->Unity\
+  \ Catalog<a href=#create-iceberg-tables-in-unity-catalog class=hash-link aria-label=\"\
+  Direct link to create-iceberg-tables-in-unity-catalog\" title=\"Direct link to create-iceberg-tables-in-unity-catalog\"\
+  >\xE2\x80\x8B</a></h2>\n<p>Iceberg tables created in <!-- -->Unity Catalog<!-- -->\
+  \ are <a href=/aws/en/tables/managed>managed Iceberg tables</a>. You can create\
+  \ these tables using:</p>\n<ul>\n<li>Databricks Runtime<!-- --> or <!-- -->Databricks\
+  \ SQL</li>\n<li>External Iceberg-compatible engines that support the Iceberg REST\
+  \ Catalog API, such as Apache Spark, Flink, Trino, or Kafka. See <a href=/aws/en/external-access/iceberg>Access\
+  \ <!-- -->Databricks<!-- --> tables from <!-- -->Apache Iceberg<!-- --> clients</a>.</li>\n\
+  </ul>\n<p>Managed Iceberg tables are fully integrated with <!-- -->Databricks<!--\
+  \ --> platform features. <!-- -->Unity Catalog<!-- --> manages lifecycle tasks like\
+  \ snapshot expiration and file compaction on these tables. Managed Iceberg tables\
+  \ also support <a href=/aws/en/delta/clustering>liquid clustering</a>, which improves\
+  \ query performance. <a href=/aws/en/optimizations/predictive-optimization>Predictive\
+  \ optimization</a> automates these tasks to reduce storage costs and improve query\
+  \ speed.</p>\n<h2 class=\"anchor anchorWithStickyNavbar_MgEv\" id=read-iceberg-tables-managed-by-other-catalogs>Read\
+  \ Iceberg tables managed by other catalogs<a href=#read-iceberg-tables-managed-by-other-catalogs\
+  \ class=hash-link aria-label=\"Direct link to Read Iceberg tables managed by other\
+  \ catalogs\" title=\"Direct link to Read Iceberg tables managed by other catalogs\"\
+  >\xE2\x80\x8B</a></h2>\n<p>A <a href=/aws/en/tables/foreign>foreign Iceberg table</a>\
+  \ is an Iceberg table managed by a catalog outside <!-- -->Unity Catalog<!-- -->.\
+  \ The external catalog stores the table's current metadata. <!-- -->Databricks<!--\
+  \ --> uses <a href=/aws/en/query-federation/>Lakehouse Federation</a> to retrieve\
+  \ metadata and read the table from object storage.</p>\n<p>Foreign Iceberg tables\
+  \ are read-only in <!-- -->Databricks<!-- --> and have limited platform support.</p>\n\
+  <h2 class=\"anchor anchorWithStickyNavbar_MgEv\" id=access-iceberg-tables-using-external-systems>Access\
+  \ Iceberg tables using external systems<a href=#access-iceberg-tables-using-external-systems\
+  \ class=hash-link aria-label=\"Direct link to Access Iceberg tables using external\
+  \ systems\" title=\"Direct link to Access Iceberg tables using external systems\"\
+  >\xE2\x80\x8B</a></h2>\n<p>You can access all Iceberg tables in <!-- -->Unity Catalog<!--\
+  \ --> using the <a href=https://github.com/apache/iceberg/blob/main/open-api/rest-catalog-open-api.yaml\
+  \ target=_blank rel=\"noopener noreferrer\">Iceberg REST Catalog API</a>. This open\
+  \ API supports read and write operations from external Iceberg engines across different\
+  \ languages and platforms. See <a href=/aws/en/external-access/iceberg>Access <!--\
+  \ -->Databricks<!-- --> tables from <!-- -->Apache Iceberg<!-- --> clients</a>.</p>\n\
+  <p>The REST Catalog supports credential vending, which delivers temporary credentials\
+  \ to external engines for accessing the underlying storage. For more information,\
+  \ see <a href=/aws/en/external-access/credential-vending>Unity Catalog<!-- --> credential\
+  \ vending for external system access</a>.</p>\n<h2 class=\"anchor anchorWithStickyNavbar_MgEv\"\
+  \ id=iceberg-table-limitations><a id=iceberg-limitations class=db-defined-anchor></a>Iceberg\
+  \ table limitations<a href=#iceberg-table-limitations class=hash-link aria-label=\"\
+  Direct link to iceberg-table-limitations\" title=\"Direct link to iceberg-table-limitations\"\
+  >\xE2\x80\x8B</a></h2>\n<p>The following limitations apply to Iceberg tables in\
+  \ <!-- -->Databricks<!-- --> and are subject to change:</p>\n<ul>\n<li>Iceberg tables\
+  \ support only the Apache Parquet file format.</li>\n<li>Databricks<!-- --> supports\
+  \ versions 1 and 2 of the <!-- -->Apache Iceberg<!-- --> specification, with the\
+  \ following exceptions:<!-- -->\n<ul>\n<li>Row-level deletes, including position\
+  \ deletes and equality-based deletes, aren't supported.</li>\n<li>Branching and\
+  \ tagging aren't supported. Only the main branch is accessible when reading foreign\
+  \ Iceberg tables.</li>\n<li>Partitioning:<!-- -->\n<ul>\n<li>Partition evolution\
+  \ is supported on managed Iceberg tables only when interacting from external Iceberg\
+  \ engines.</li>\n<li>Foreign Iceberg tables don't support partition evolution.</li>\n\
+  <li>Partitioning by <code>BINARY</code> type is not supported.</li>\n</ul>\n</li>\n\
+  <li>The following data types aren't supported:<!-- -->\n<ul>\n<li><code>UUID</code></li>\n\
+  <li><code>Fixed(L)</code></li>\n<li><code>TIME</code></li>\n<li>Nested <code>STRUCT</code>\
+  \ with required fields</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>Managed Iceberg tables\
+  \ do not support primary key or foreign key constraints.</li>\n</ul>\n<h3 class=\"\
+  anchor anchorWithStickyNavbar_MgEv\" id=managed-iceberg-table-limitations>Managed\
+  \ Iceberg table limitations<a href=#managed-iceberg-table-limitations class=hash-link\
+  \ aria-label=\"Direct link to Managed Iceberg table limitations\" title=\"Direct\
+  \ link to Managed Iceberg table limitations\">\xE2\x80\x8B</a></h3>\n<p>The following\
+  \ limitations apply specifically to managed Iceberg tables:</p>\n<ul>\n<li>Vector\
+  \ search isn't supported on managed Iceberg tables.</li>\n<li>Apache Iceberg<!--\
+  \ --> doesn't support <a href=/aws/en/delta/delta-change-data-feed>change data feed</a>.\
+  \ As a result, incremental processing is not supported when reading Managed Iceberg\
+  \ tables as a source for:<!-- -->\n<ul>\n<li>Materialized views and streaming tables</li>\n\
+  <li>Lakehouse Monitoring</li>\n<li>Online tables</li>\n<li>Lakebase</li>\n<li>Data\
+  \ classification</li>\n</ul>\n</li>\n</ul>\n<h3 class=\"anchor anchorWithStickyNavbar_MgEv\"\
+  \ id=foreign-iceberg-table-limitations>Foreign Iceberg table limitations<a href=#foreign-iceberg-table-limitations\
+  \ class=hash-link aria-label=\"Direct link to Foreign Iceberg table limitations\"\
+  \ title=\"Direct link to Foreign Iceberg table limitations\">\xE2\x80\x8B</a></h3>\n\
+  <p>The following limitations apply specifically to foreign Iceberg tables:</p>\n\
+  <ul>\n<li>Time travel is supported only for Iceberg snapshots that have been previously\
+  \ read in <!-- -->Databricks<!-- --> (that is, snapshots where a <code>SELECT</code>\
+  \ statement was executed).</li>\n<li>Using bucket transform functions for Iceberg\
+  \ partitioning can degrade query performance when conditional filters are used.</li>\n\
+  <li>Cloud storage tiering products such as Amazon S3 are not integrated with foreign\
+  \ Iceberg tables. Accessing foreign Iceberg tables in <!-- -->Databricks<!-- -->\
+  \ can restore data archived in lower-cost storage tiers.</li>\n<li>On dedicated\
+  \ access mode clusters, reads and <code>REFRESH FOREIGN TABLE</code> operations\
+  \ on Iceberg tables require <code>ALL PRIVILEGES</code>.</li>\n</ul></div><footer\
+  \ class=\"theme-doc-footer docusaurus-mt-lg\"><div class=\"row margin-top--sm theme-doc-footer-edit-meta-row\"\
+  ><div class=col></div><div class=\"col lastUpdated_df0x\"><span class=theme-last-updated>Last\
+  \ updated<!-- --> on <b><time datetime=2025-08-20T00:00:00.000Z itemprop=dateModified>Aug\
+  \ 20, 2025</time></b></span></div></div></footer></article><nav class=\"pagination-nav\
+  \ docusaurus-mt-lg\" aria-label=\"Docs pages\"></nav></div></div><div class=\"col\
+  \ col--3\"><div class=\"tableOfContents_KI7p thin-scrollbar theme-doc-toc-desktop\"\
+  ><ul class=\"table-of-contents table-of-contents__left-border\"><li><a href=#create-iceberg-tables-in-unity-catalog\
+  \ class=\"table-of-contents__link toc-highlight\">Create Iceberg tables in Unity\
+  \ Catalog</a><li><a href=#read-iceberg-tables-managed-by-other-catalogs class=\"\
+  table-of-contents__link toc-highlight\">Read Iceberg tables managed by other catalogs</a><li><a\
+  \ href=#access-iceberg-tables-using-external-systems class=\"table-of-contents__link\
+  \ toc-highlight\">Access Iceberg tables using external systems</a><li><a href=#iceberg-table-limitations\
+  \ class=\"table-of-contents__link toc-highlight\"><link class=db-defined-anchor>Iceberg\
+  \ table limitations</a><ul><li><a href=#managed-iceberg-table-limitations class=\"\
+  table-of-contents__link toc-highlight\">Managed Iceberg table limitations</a><li><a\
+  \ href=#foreign-iceberg-table-limitations class=\"table-of-contents__link toc-highlight\"\
+  >Foreign Iceberg table limitations</a></ul></ul></div></div></div><div id=suPageRateApp></div></div></main></div></div></div><footer\
+  \ class=\"footer footer--dark\"><div class=\"container container-fluid\"><div class=\"\
+  footer__links text--center\"><div class=footer__links><a href=\"mailto:doc-feedback@databricks.com?subject=Documentation\
+  \ Feedback\" target=_blank rel=\"noopener noreferrer\" class=footer__link-item>Send\
+  \ us feedback<svg width=13.5 height=13.5 aria-hidden=true viewBox=\"0 0 24 24\"\
+  \ class=iconExternalLink_Lu68><path fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><span class=footer__link-separator>\xC2\
+  \xB7</span><a href=https://www.databricks.com/legal/privacynotice target=_blank\
+  \ rel=\"noopener noreferrer\" class=footer__link-item>Privacy Notice<svg width=13.5\
+  \ height=13.5 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><span class=footer__link-separator>\xC2\
+  \xB7</span><a href=https://www.databricks.com/terms-of-use target=_blank rel=\"\
+  noopener noreferrer\" class=footer__link-item>Terms of Use<svg width=13.5 height=13.5\
+  \ aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path fill=currentColor\
+  \ d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828\
+  \ 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><span class=footer__link-separator>\xC2\
+  \xB7</span><a href=https://www.databricks.com/legal/modern-slavery-policy-statement\
+  \ target=_blank rel=\"noopener noreferrer\" class=footer__link-item>Modern Slavery\
+  \ Statement<svg width=13.5 height=13.5 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><span class=footer__link-separator>\xC2\
+  \xB7</span><a href=https://www.databricks.com/legal/supplemental-privacy-notice-california-residents\
+  \ target=_blank rel=\"noopener noreferrer\" class=footer__link-item>California Privacy<svg\
+  \ width=13.5 height=13.5 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><span class=footer__link-separator>\xC2\
+  \xB7</span><span class=footer__link-item><a href=javascript:OneTrust.ToggleInfoDisplay()>Your\
+  \ Privacy Choices\xC2\_<img alt=\"\" src=https://www.databricks.com/sites/default/files/2022-12/gpcicon_small.png\
+  \ data-ot-ignore=1 class=\"dbgpcicon inline-block max-h-[15px] w-auto\" width=31\
+  \ height=15></a></span></div></div><div class=\"footer__bottom text--center\"><div\
+  \ class=footer__copyright>\xC2\xA9 Databricks 2025. All rights reserved. Apache,\
+  \ Apache Spark, Spark and the Spark logo are trademarks of the <a href=https://www.apache.org/\
+  \ target=_blank>Apache Software Foundation</a>.</div></div></div></footer></div>"
+label:
+  content: |
+    What is Apache Iceberg in Databricks ? Preview Unity Catalog -managed Apache Iceberg tables are available in Public Preview in Databricks Runtime 16.4 LTS and above. Foreign Iceberg tables are also in Public Preview in Databricks Runtime 16.4 LTS and above. Apache Iceberg is an open source table format for analytics workloads. It supports features like schema evolution, time travel, and hidden partitioning. Like Delta Lake, Iceberg provides an abstraction layer that enables ACID transactions on data stored in object storage. Databricks supports Iceberg tables that use the Apache Parquet file format. Iceberg maintains atomicity and consistency by writing new metadata files for each table change. An Iceberg catalog is the top-level layer of the Iceberg table architecture. It handles operations like creating, dropping, and renaming tables. Its main responsibility is to provide the current metadata when a table is loaded. Databricks supports Iceberg tables managed by: Unity Catalog Foreign catalogs , such as AWS Glue, Hive Metastore, or Snowflake Horizon Catalog All Iceberg tables in Databricks follow the open Iceberg table format specification. See the Iceberg table spec . Create Iceberg tables in Unity Catalog â Iceberg tables created in Unity Catalog are managed Iceberg tables . You can create these tables using: Databricks Runtime or Databricks SQL External Iceberg-compatible engines that support the Iceberg REST Catalog API, such as Apache Spark, Flink, Trino, or Kafka. See Access Databricks tables from Apache Iceberg clients . Managed Iceberg tables are fully integrated with Databricks platform features. Unity Catalog manages lifecycle tasks like snapshot expiration and file compaction on these tables. Managed Iceberg tables also support liquid clustering , which improves query performance. Predictive optimization automates these tasks to reduce storage costs and improve query speed. Read Iceberg tables managed by other catalogs â A foreign Iceberg table is an Iceberg table managed by a catalog outside Unity Catalog . The external catalog stores the table's current metadata. Databricks uses Lakehouse Federation to retrieve metadata and read the table from object storage. Foreign Iceberg tables are read-only in Databricks and have limited platform support. Access Iceberg tables using external systems â You can access all Iceberg tables in Unity Catalog using the Iceberg REST Catalog API . This open API supports read and write operations from external Iceberg engines across different languages and platforms. See Access Databricks tables from Apache Iceberg clients . The REST Catalog supports credential vending, which delivers temporary credentials to external engines for accessing the underlying storage. For more information, see Unity Catalog credential vending for external system access . Iceberg table limitations â The following limitations apply to Iceberg tables in Databricks and are subject to change: Iceberg tables support only the Apache Parquet file format. Databricks supports versions 1 and 2 of the Apache Iceberg specification, with the following exceptions: Row-level deletes, including position deletes and equality-based deletes, aren't supported. Branching and tagging aren't supported. Only the main branch is accessible when reading foreign Iceberg tables. Partitioning: Partition evolution is supported on managed Iceberg tables only when interacting from external Iceberg engines. Foreign Iceberg tables don't support partition evolution. Partitioning by BINARY type is not supported. The following data types aren't supported: UUID Fixed(L) TIME Nested STRUCT with required fields Managed Iceberg tables do not support primary key or foreign key constraints. Managed Iceberg table limitations â The following limitations apply specifically to managed Iceberg tables: Vector search isn't supported on managed Iceberg tables. Apache Iceberg doesn't support change data feed . As a result, incremental processing is not supported when reading Managed Iceberg tables as a source for: Materialized views and streaming tables Lakehouse Monitoring Online tables Lakebase Data classification Foreign Iceberg table limitations â The following limitations apply specifically to foreign Iceberg tables: Time travel is supported only for Iceberg snapshots that have been previously read in Databricks (that is, snapshots where a SELECT statement was executed). Using bucket transform functions for Iceberg partitioning can degrade query performance when conditional filters are used. Cloud storage tiering products such as Amazon S3 are not integrated with foreign Iceberg tables. Accessing foreign Iceberg tables in Databricks can restore data archived in lower-cost storage tiers. On dedicated access mode clusters, reads and REFRESH FOREIGN TABLE operations on Iceberg tables require ALL PRIVILEGES .

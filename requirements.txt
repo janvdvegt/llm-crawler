@@ -1,0 +1,14 @@
+pytest
+pydantic
+requests
+beautifulsoup4
+openai
+lxml
+pyyaml
+click
+python-Levenshtein
+fastapi
+uvicorn[standard]
+orjson
+redis
+prometheus_client

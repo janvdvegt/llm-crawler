@@ -1,0 +1,175 @@
+url: https://news.ycombinator.com/item?id=45070602
+raw_content: "<html lang=\"en\" op=\"item\"><head><meta name=\"referrer\" content=\"\
+  origin\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\
+  ><link rel=\"stylesheet\" type=\"text/css\" href=\"news.css?rdkg5pOPauT7LmsdOtnz\"\
+  ><link rel=\"icon\" href=\"y18.svg\"><link rel=\"canonical\" href=\"https://news.ycombinator.com/item?id=45070602\"\
+  ><title>Nginx-CGI brings support for CGI to Nginx and angie | Hacker News</title></head><body><center><table\
+  \ id=\"hnmain\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"85%\" bgcolor=\"\
+  #f6f6ef\"><tr><td bgcolor=\"#ff6600\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"\
+  0\" width=\"100%\" style=\"padding:2px\"><tr><td style=\"width:18px;padding-right:4px\"\
+  ><a href=\"https://news.ycombinator.com\"><img src=\"y18.svg\" width=\"18\" height=\"\
+  18\" style=\"border:1px white solid; display:block\"></a></td><td style=\"line-height:12pt;\
+  \ height:10px;\"><span class=\"pagetop\"><b class=\"hnname\"><a href=\"news\">Hacker\
+  \ News</a></b><a href=\"newest\">new</a> | <a href=\"front\">past</a> | <a href=\"\
+  newcomments\">comments</a> | <a href=\"ask\">ask</a> | <a href=\"show\">show</a>\
+  \ | <a href=\"jobs\">jobs</a> | <a href=\"submit\" rel=\"nofollow\">submit</a></span></td><td\
+  \ style=\"text-align:right;padding-right:4px;\"><span class=\"pagetop\"><a href=\"\
+  login?goto=item%3Fid%3D45070602\">login</a></span></td></tr></table></td></tr><tr\
+  \ style='height:10px'/><tr id=\"bigbox\"><td><table class=\"fatitem\" border=\"\
+  0\"><tr class=\"athing submission\" id=\"45070602\"><td align=\"right\" valign=\"\
+  top\" class=\"title\"><span class=\"rank\"></span></td><td valign=\"top\" class=\"\
+  votelinks\"><center><a id='up_45070602' href='vote?id=45070602&amp;how=up&amp;goto=item%3Fid%3D45070602'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><span\
+  \ class=\"titleline\"><a href=\"https://github.com/pjincz/nginx-cgi\">Nginx-CGI\
+  \ brings support for CGI to Nginx and angie</a><span class=\"sitebit comhead\">\
+  \ (<a href=\"from?site=github.com/pjincz\"><span class=\"sitestr\">github.com/pjincz</span></a>)</span></span></td></tr><tr><td\
+  \ colspan=\"2\"></td><td class=\"subtext\"><span class=\"subline\"><span class=\"\
+  score\" id=\"score_45070602\">13 points</span> by <a href=\"user?id=jesprenj\" class=\"\
+  hnuser\">jesprenj</a> <span class=\"age\" title=\"2025-08-29T23:40:21 1756510821\"\
+  ><a href=\"item?id=45070602\">3 hours ago</a></span> <span id=\"unv_45070602\"></span>\
+  \ | <a href=\"hide?id=45070602&amp;goto=item%3Fid%3D45070602\">hide</a> | <a href=\"\
+  https://hn.algolia.com/?query=Nginx-CGI%20brings%20support%20for%20CGI%20to%20Nginx%20and%20angie&type=story&dateRange=all&sort=byDate&storyText=false&prefix&page=0\"\
+  \ class=\"hnpast\">past</a> | <a href=\"fave?id=45070602&amp;auth=b18f1373d308b41d8107f3f05b73c0c34b4c3408\"\
+  >favorite</a> | <a href=\"item?id=45070602\">7&nbsp;comments</a></span></td></tr><tr><td\
+  \ colspan=\"2\"></td><td><div class=\"toptext\"></div></td></tr><tr style='height:6px'/><tr><td\
+  \ colspan=\"2\"></td><td><form action=\"comment\" method=\"post\"><input type=\"\
+  hidden\" name=\"parent\" value=\"45070602\"><input type=\"hidden\" name=\"goto\"\
+  \ value=\"item?id=45070602\"><input type=\"hidden\" name=\"hmac\" value=\"1153cacc4e66d530a7342e5443c5f9f5a19d60ef\"\
+  ><textarea name=\"text\" rows=\"8\" cols=\"80\" wrap=\"virtual\"></textarea><br><br>\n\
+  <input type=\"submit\" value=\"add comment\"></form></td></tr></table><br>\n<table\
+  \ border=\"0\" class=\"comment-tree\"><tr class=\"athing comtr\" id=\"45071379\"\
+  ><td><table border=\"0\"><tr><td class=\"ind\" indent=\"0\"><img src=\"s.gif\" height=\"\
+  1\" width=\"0\"></td><td valign=\"top\" class=\"votelinks\"><center><a id='up_45071379'\
+  \ href='vote?id=45071379&amp;how=up&amp;goto=item%3Fid%3D45070602'><div class='votearrow'\
+  \ title='upvote'></div></a></center></td><td class=\"default\"><div style=\"margin-top:2px;\
+  \ margin-bottom:-10px;\"><span class=\"comhead\"><a href=\"user?id=electroglyph\"\
+  \ class=\"hnuser\">electroglyph</a> <span class=\"age\" title=\"2025-08-30T02:18:49\
+  \ 1756520329\"><a href=\"item?id=45071379\">28 minutes ago</a></span> <span id=\"\
+  unv_45071379\"></span><span class=\"navs\"> | <a href=\"#45071008\" class=\"clicky\"\
+  \ aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45071379\" n=\"2\"\
+  \ href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">OpenResty + Lua ftw</div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45071379&amp;goto=item%3Fid%3D45070602%2345071379\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45071455\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45071455' href='vote?id=45071455&amp;how=up&amp;goto=item%3Fid%3D45070602'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=lemcoe9\" class=\"hnuser\">lemcoe9</a> <span class=\"age\" title=\"\
+  2025-08-30T02:34:52 1756521292\"><a href=\"item?id=45071455\">12 minutes ago</a></span>\
+  \ <span id=\"unv_45071455\"></span><span class=\"navs\"> | <a href=\"#45071379\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45071008\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45071455\"\
+  \ n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">Absolutely. For me, OpenResty\
+  \ combined with a custom Lua script solved an incredibly complicated business problem\
+  \ that I ran into a couple years ago, and now that arrangement serves thousands\
+  \ of complex requests per day. With Nginx and that custom code combined into a single\
+  \ configuration, not requiring a separate backend service, we turned a complicated\
+  \ problem into a very simple one!</div><div class=\"reply\"><p><font size=\"1\"\
+  ><u><a href=\"reply?id=45071455&amp;goto=item%3Fid%3D45070602%2345071455\" rel=\"\
+  nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr class=\"\
+  athing comtr\" id=\"45071008\"><td><table border=\"0\"><tr><td class=\"ind\" indent=\"\
+  0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"top\" class=\"\
+  votelinks\"><center><a id='up_45071008' href='vote?id=45071008&amp;how=up&amp;goto=item%3Fid%3D45070602'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=doublerabbit\" class=\"hnuser\">doublerabbit</a> <span class=\"\
+  age\" title=\"2025-08-30T00:56:58 1756515418\"><a href=\"item?id=45071008\">1 hour\
+  \ ago</a></span> <span id=\"unv_45071008\"></span><span class=\"navs\"> | <a href=\"\
+  #45071379\" class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"#45071124\"\
+  \ class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"\
+  45071008\" n=\"3\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"\
+  ></span></span></span></div><br>\n<div class=\"comment\"><div class=\"commtext c00\"\
+  >eBay confused the 17 year old me back in 2007 when their listings were powered\
+  \ by a dll file.<p><pre><code>    cgi.ebay.co.uk&#x2F;ws&#x2F;eBayISAPI.dll\n</code></pre>\n\
+  It wasn&#x27;t for many years later that I discovered knowledge about CGI.</div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45071008&amp;goto=item%3Fid%3D45070602%2345071008\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45071151\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45071151' href='vote?id=45071151&amp;how=up&amp;goto=item%3Fid%3D45070602'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=treyd\" class=\"hnuser\">treyd</a> <span class=\"age\" title=\"\
+  2025-08-30T01:30:19 1756517419\"><a href=\"item?id=45071151\">1 hour ago</a></span>\
+  \ <span id=\"unv_45071151\"></span><span class=\"navs\"> | <a href=\"#45071008\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45071124\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45071151\"\
+  \ n=\"2\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">I never did understand why this\
+  \ path&#x2F;file structure was exposed.</div><div class=\"reply\"><p><font size=\"\
+  1\"><u><a href=\"reply?id=45071151&amp;goto=item%3Fid%3D45070602%2345071151\" rel=\"\
+  nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr class=\"\
+  athing comtr\" id=\"45071178\"><td><table border=\"0\"><tr><td class=\"ind\" indent=\"\
+  2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"top\" class=\"\
+  votelinks\"><center><a id='up_45071178' href='vote?id=45071178&amp;how=up&amp;goto=item%3Fid%3D45070602'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=immibis\" class=\"hnuser\">immibis</a> <span class=\"age\" title=\"\
+  2025-08-30T01:36:05 1756517765\"><a href=\"item?id=45071178\">1 hour ago</a></span>\
+  \ <span id=\"unv_45071178\"></span><span class=\"navs\"> | <a href=\"#45071008\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45071151\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45071124\" class=\"clicky\"\
+  \ aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45071178\" n=\"1\"\
+  \ href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">Same reason <a href=\"https:&#x2F;&#x2F;foo.example&#x2F;bar&#x2F;baz.html\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;foo.example&#x2F;bar&#x2F;baz.html</a> exposes\
+  \ it - it tells the web server which file to access. Cool, customized routing wasn&#x27;t\
+  \ always a thing.<p>The eBay example, by the way, is ISAPI, not CGI.</div><div class=\"\
+  reply\"><p><font size=\"1\"><u><a href=\"reply?id=45071178&amp;goto=item%3Fid%3D45070602%2345071178\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr coll\" id=\"45071124\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"\
+  top\" class=\"votelinks nosee\"><center><img src=\"s.gif\" height=\"1\" width=\"\
+  14\"></center></td><td class=\"default\"><div style=\"margin-top:2px; margin-bottom:-10px;\"\
+  ><span class=\"comhead\"><a href=\"user?id=ngxsux\" class=\"hnuser\">ngxsux</a>\
+  \ <span class=\"age\" title=\"2025-08-30T01:24:26 1756517066\"><a href=\"item?id=45071124\"\
+  >1 hour ago</a></span> <span id=\"unv_45071124\"></span><span class=\"navs\"> |\
+  \ <a href=\"#45071008\" class=\"clicky\" aria-hidden=\"true\">prev</a> <a class=\"\
+  togg clicky\" id=\"45071124\" n=\"3\" href=\"javascript:void(0)\">[3 more]</a><span\
+  \ class=\"onstory\"></span></span></span></div><br>\n<div class=\"comment noshow\"\
+  >[flagged]<div class=\"reply\"><p><font size=\"1\"></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr noshow\" id=\"45071130\"><td><table border=\"0\"><tr><td\
+  \ class=\"ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td\
+  \ valign=\"top\" class=\"votelinks\"><center><a id='up_45071130' href='vote?id=45071130&amp;how=up&amp;goto=item%3Fid%3D45070602'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=raincom\" class=\"hnuser\">raincom</a> <span class=\"age\" title=\"\
+  2025-08-30T01:25:31 1756517131\"><a href=\"item?id=45071130\">1 hour ago</a></span>\
+  \ <span id=\"unv_45071130\"></span><span class=\"navs\"> | <a href=\"#45071124\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> <a class=\"togg clicky\" id=\"\
+  45071130\" n=\"2\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"\
+  ></span></span></span></div><br>\n<div class=\"comment\"><div class=\"commtext c00\"\
+  >Just curious, who did they steal from? Or which code base it is stolen from?</div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45071130&amp;goto=item%3Fid%3D45070602%2345071130\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr noshow\" id=\"45071184\"><td><table border=\"0\"><tr><td\
+  \ class=\"ind\" indent=\"2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td\
+  \ valign=\"top\" class=\"votelinks\"><center><a id='up_45071184' href='vote?id=45071184&amp;how=up&amp;goto=item%3Fid%3D45070602'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=RiverCrochet\" class=\"hnuser\">RiverCrochet</a> <span class=\"\
+  age\" title=\"2025-08-30T01:37:50 1756517870\"><a href=\"item?id=45071184\">1 hour\
+  \ ago</a></span> <span id=\"unv_45071184\"></span><span class=\"navs\"> | <a href=\"\
+  #45071124\" class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45071130\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> <a class=\"togg clicky\" id=\"\
+  45071184\" n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"\
+  ></span></span></span></div><br>\n<div class=\"comment\"><div class=\"commtext c00\"\
+  >It may be a reference to this: <a href=\"https:&#x2F;&#x2F;arstechnica.com&#x2F;information-technology&#x2F;2024&#x2F;02&#x2F;nginx-key-developer-starts-a-freenginx-fork-after-dispute-with-parent-firm&#x2F;\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;arstechnica.com&#x2F;information-technology&#x2F;2024&#x2F;02&#x2F;nginx...</a></div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45071184&amp;goto=item%3Fid%3D45070602%2345071184\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr></table><br><br>\n\
+  </td></tr><tr><td><img src=\"s.gif\" height=\"10\" width=\"0\"><table width=\"100%\"\
+  \ cellspacing=\"0\" cellpadding=\"1\"><tr><td bgcolor=\"#ff6600\"></td></tr></table><br>\n\
+  <center><span class=\"yclinks\"><a href=\"newsguidelines.html\">Guidelines</a> |\
+  \ <a href=\"newsfaq.html\">FAQ</a> | <a href=\"lists\">Lists</a> | <a href=\"https://github.com/HackerNews/API\"\
+  >API</a> | <a href=\"security.html\">Security</a> | <a href=\"https://www.ycombinator.com/legal/\"\
+  >Legal</a> | <a href=\"https://www.ycombinator.com/apply/\">Apply to YC</a> | <a\
+  \ href=\"mailto:hn@ycombinator.com\">Contact</a></span><br><br>\n<form method=\"\
+  get\" action=\"//hn.algolia.com/\">Search: <input type=\"text\" name=\"q\" size=\"\
+  17\" autocorrect=\"off\" spellcheck=\"false\" autocapitalize=\"off\" autocomplete=\"\
+  off\"></form></center></td></tr></table></center></body><script type=\"text/javascript\"\
+  \ src=\"hn.js?rdkg5pOPauT7LmsdOtnz\"></script></html>"
+label: null

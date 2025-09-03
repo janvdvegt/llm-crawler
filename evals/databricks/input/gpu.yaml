@@ -1,0 +1,425 @@
+url: https://docs.databricks.com/aws/en/compute/serverless/gpu
+raw_content: "<!doctype html><html lang=en dir=ltr class=\"docs-wrapper plugin-docs\
+  \ plugin-id-default docs-version-current docs-doc-page docs-doc-id-compute/serverless/gpu\"\
+  \ data-has-hydrated=false><meta charset=UTF-8><meta name=generator content=\"Docusaurus\
+  \ v3.6.3\"><title data-rh=true>Serverless GPU compute | Databricks on AWS</title><meta\
+  \ data-rh=true name=viewport content=\"width=device-width,initial-scale=1.0\"><meta\
+  \ data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true\
+  \ property=og:image content=https://docs.databricks.com/aws/en/img/og-image.png><meta\
+  \ data-rh=true name=twitter:image content=https://docs.databricks.com/aws/en/img/og-image.png><meta\
+  \ data-rh=true property=og:url content=https://docs.databricks.com/aws/en/compute/serverless/gpu><meta\
+  \ data-rh=true property=og:locale content=en><meta data-rh=true property=og:locale:alternate\
+  \ content=ja><meta data-rh=true property=og:locale:alternate content=pt><meta data-rh=true\
+  \ name=docusaurus_locale content=en><meta data-rh=true name=docsearch:language content=en><meta\
+  \ data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag\
+  \ content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta\
+  \ data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta\
+  \ data-rh=true property=og:title content=\"Serverless GPU compute | Databricks on\
+  \ AWS\"><meta data-rh=true name=description content=\"Learn about Databricks Serverless\
+  \ GPUs. This compute offering is specialized for custom AI workloads such as custom\
+  \ single and multi-node deep learning.\"><meta data-rh=true property=og:description\
+  \ content=\"Learn about Databricks Serverless GPUs. This compute offering is specialized\
+  \ for custom AI workloads such as custom single and multi-node deep learning.\"\
+  ><link data-rh=true rel=icon href=/aws/en/img/favicon.ico><link data-rh=true rel=canonical\
+  \ href=https://docs.databricks.com/aws/en/compute/serverless/gpu><link data-rh=true\
+  \ rel=alternate href=https://docs.databricks.com/aws/en/compute/serverless/gpu hreflang=en><link\
+  \ data-rh=true rel=alternate href=https://docs.databricks.com/aws/en/ja/compute/serverless/gpu\
+  \ hreflang=ja><link data-rh=true rel=alternate href=https://docs.databricks.com/aws/en/pt/compute/serverless/gpu\
+  \ hreflang=pt><link data-rh=true rel=alternate href=https://docs.databricks.com/aws/en/compute/serverless/gpu\
+  \ hreflang=x-default><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({\"\
+  gtm.start\":new Date().getTime(),event:\"gtm.js\"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src=\"\
+  https://www.googletagmanager.com/gtm.js?id=\"+r+(\"dataLayer\"!=n?\"&l=\"+n:\"\"\
+  ),d.parentNode.insertBefore(g,d)}(window,document,\"script\",\"dataLayer\",\"GTM-TWTKQQ\"\
+  )</script><link rel=stylesheet href=/aws/en/assets/css/styles.6776715e.css><script\
+  \ src=/aws/en/assets/js/runtime~main.ec9796f6.js defer></script><script src=/aws/en/assets/js/main.14727540.js\
+  \ defer></script><body class=navigation-with-keyboard><noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-TWTKQQ\"\
+  \ height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>\n\n\
+  <script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get(\"\
+  docusaurus-theme\")}catch(t){}}()||function(){try{return window.localStorage.getItem(\"\
+  theme\")}catch(t){}}();t=null!==e?e:\"light\",document.documentElement.setAttribute(\"\
+  data-theme\",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith(\"\
+  docusaurus-data-\")){var a=t.replace(\"docusaurus-data-\",\"data-\");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div\
+  \ id=__docusaurus><div role=region aria-label=\"Skip to main content\"><a class=skipToContent_TB0u\
+  \ href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main\
+  \ class=\"navbar navbar--fixed-top\"><div class=navbar__inner><div class=navbar__items><button\
+  \ aria-label=\"Toggle navigation bar\" aria-expanded=false class=\"navbar__toggle\
+  \ clean-btn\" type=button><svg width=30 height=30 viewBox=\"0 0 30 30\" aria-hidden=true><path\
+  \ stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d=\"\
+  M4 7h22M4 15h22M4 23h22\"/></svg></button><a href=https://www.databricks.com target=_blank\
+  \ rel=\"noopener noreferrer\" class=navbar__brand><div class=navbar__logo><img src=/aws/en/img/logo.svg\
+  \ alt=\"Databricks Logo\" class=\"themedComponent_hRIn themedComponent--light_H5vX\"\
+  ><img src=/aws/en/img/logo-dark.svg alt=\"Databricks Logo\" class=\"themedComponent_hRIn\
+  \ themedComponent--dark_aLeF\"></div></a><a aria-current=page class=\"navbar__item\
+  \ navbar__link navbar__link--active\" href=/aws/en/getting-started/>Get started</a><a\
+  \ aria-current=page class=\"navbar__item navbar__link navbar__link--active\" href=/aws/en/developers/>Developers</a><a\
+  \ aria-current=page class=\"navbar__item navbar__link navbar__link--active\" href=/aws/en/reference/api>Reference</a><a\
+  \ aria-current=page class=\"navbar__item navbar__link navbar__link--active\" href=/aws/en/release-notes/>Release\
+  \ notes</a><div class=\"navbar__item dropdown dropdown--hoverable\"><a href=# aria-haspopup=true\
+  \ aria-expanded=false role=button class=navbar__link>Resources</a><ul class=dropdown__menu><li><a\
+  \ href=https://help.databricks.com target=_blank rel=\"noopener noreferrer\" class=dropdown__link>Support<svg\
+  \ width=12 height=12 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><li><a href=https://kb.databricks.com\
+  \ target=_blank rel=\"noopener noreferrer\" class=dropdown__link>Knowledge Base<svg\
+  \ width=12 height=12 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><li><a href=https://community.databricks.com\
+  \ target=_blank rel=\"noopener noreferrer\" class=dropdown__link>Community<svg width=12\
+  \ height=12 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><li><a href=https://customer-academy.databricks.com\
+  \ target=_blank rel=\"noopener noreferrer\" class=dropdown__link>Training<svg width=12\
+  \ height=12 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><li><a href=\"\
+  mailto:doc-feedback@databricks.com?subject=Documentation Feedback\" target=_blank\
+  \ rel=\"noopener noreferrer\" class=dropdown__link>Feedback<svg width=12 height=12\
+  \ aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path fill=currentColor\
+  \ d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828\
+  \ 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a></ul></div></div><div class=\"\
+  navbar__items navbar__items--right\"><div class=\"toggle_SEEL colorModeToggle_zm0l\"\
+  ><button class=\"clean-btn toggleButton_xR62 toggleButtonDisabled_mwDw\" type=button\
+  \ disabled title=\"Switch between dark and light mode (currently light mode)\" aria-label=\"\
+  Switch between dark and light mode (currently light mode)\" aria-live=polite aria-pressed=false><svg\
+  \ viewBox=\"0 0 24 24\" width=24 height=24 class=lightToggleIcon_rwxp><path fill=currentColor\
+  \ d=\"M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5\
+  \ S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z\
+  \ M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z\
+  \ M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z\
+  \ M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z\
+  \ M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41\
+  \ L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41\
+  \ s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06\
+  \ c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z\"/></svg><svg viewBox=\"\
+  0 0 24 24\" width=24 height=24 class=darkToggleIcon_sZjN><path fill=currentColor\
+  \ d=\"M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19\
+  \ c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36\
+  \ c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z\"\
+  /></svg></button></div><div class=navbarSearchContainer_bHWz></div></div></div><div\
+  \ class=navbar__inner><div class=navbar__items><style data-emotion=\"css 1tpdvqq\"\
+  >.css-1tpdvqq{width:240px}</style><div class=\"searchBar css-1tpdvqq\" id=auto><div\
+  \ ng-controller=SearchautoController><div bind-html-compile=autocompleteHtml></div></div></div></div><div\
+  \ class=\"navbar__items navbar__items--right\"><div class=\"navbar__item dropdown\
+  \ dropdown--hoverable dropdown--right\"><a href=# aria-haspopup=true aria-expanded=false\
+  \ role=button class=navbar__link>English</a><ul class=dropdown__menu><li><a class=dropdown__link\
+  \ lang=en href=/aws/en/compute/serverless/gpu>English</a><li><a class=dropdown__link\
+  \ lang=ja href=/aws/en/aws/ja/compute/serverless/gpu>\xE6\x97\xA5\xE6\x9C\xAC\xE8\
+  \xAA\x9E</a><li><a class=dropdown__link lang=pt href=/aws/en/aws/pt/compute/serverless/gpu>Portugu\xC3\
+  \xAAs</a></ul></div><div class=\"navbar__item dropdown dropdown--hoverable dropdown--right\"\
+  ><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link>AWS</a><ul\
+  \ class=dropdown__menu><li><a href=https://learn.microsoft.com/azure/databricks/compute/serverless/gpu\
+  \ rel=\"noopener noreferrer\" class=dropdown__link>Azure<svg width=12 height=12\
+  \ aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path fill=currentColor\
+  \ d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828\
+  \ 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><li><a class=dropdown__link href=/aws/en/gcp/en/compute/serverless/gpu>GCP</a><li><a\
+  \ class=dropdown__link href=/aws/en/sap>SAP</a></ul></div><style data-emotion=\"\
+  css 143a876\">.css-143a876{color:#fff;text-transform:uppercase;background-color:#2272b4;align-items:center;height:100%;font-size:90%;font-weight:600;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:0\
+  \ .8rem!important}.css-143a876:hover{color:#fff;background-color:#0e538b;-webkit-text-decoration:none;text-decoration:none}</style><a\
+  \ class=\"tryDatabricksLink css-143a876\" href=\"https://signup.databricks.com/?dbx_source=docs\"\
+  \ target=_blank rel=noreferrer>Try Databricks</a></div></div><div role=presentation\
+  \ class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback\
+  \ class=\"main-wrapper mainWrapper_zemO\"><div class=docsWrapper_klhP><button aria-label=\"\
+  Scroll back to top\" class=\"clean-btn theme-back-to-top-button backToTopButton_oGYd\"\
+  \ type=button></button><div class=docRoot_Te_T><aside class=\"theme-doc-sidebar-container\
+  \ docSidebarContainer_nExd\"><div class=sidebarViewport_fPew></div></aside><main\
+  \ class=docMainContainer_Bfa7><div class=\"container padding-top--md padding-bottom--lg\"\
+  ><div class=row><div class=\"col docItemCol_r8C9\"><div class=docItemContainer_ct0A><article><style\
+  \ data-emotion=\"css 1rizvmm\">.css-1rizvmm{justify-content:space-between;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative}.css-1rizvmm\
+  \ .breadcrumbs{-webkit-flex:1;-ms-flex:1;flex:1;min-width:0}</style><div class=css-1rizvmm><nav\
+  \ class=\"theme-doc-breadcrumbs breadcrumbsContainer_djwJ\" aria-label=Breadcrumbs><ul\
+  \ class=breadcrumbs itemscope itemtype=https://schema.org/BreadcrumbList><li class=breadcrumbs__item><a\
+  \ aria-label=\"Home page\" class=breadcrumbs__link href=/aws/en/><svg viewBox=\"\
+  0 0 24 24\" class=breadcrumbHomeIcon_hOxA><path d=\"M10 19v-5h4v5c0 .55.45 1 1 1h3c.55\
+  \ 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36\
+  \ 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z\" fill=currentColor\
+  \ /></svg></a><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem\
+  \ class=breadcrumbs__item><a class=breadcrumbs__link itemprop=item href=/aws/en/machine-learning/><span\
+  \ itemprop=name>AI and machine learning</span></a><meta itemprop=position content=1><li\
+  \ itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class=breadcrumbs__item><a\
+  \ class=breadcrumbs__link itemprop=item href=/aws/en/machine-learning/train-model/><span\
+  \ itemprop=name>Train models</span></a><meta itemprop=position content=2><li itemscope\
+  \ itemprop=itemListElement itemtype=https://schema.org/ListItem class=\"breadcrumbs__item\
+  \ breadcrumbs__item--active\"><span class=breadcrumbs__link itemprop=name>Serverless\
+  \ GPU compute (Beta)</span><meta itemprop=position content=3></ul></nav></div><div\
+  \ class=\"tocCollapsible_MlSb theme-doc-toc-mobile tocMobile_P4AZ\"><button type=button\
+  \ class=\"clean-btn tocCollapsibleButton_YzX8\">On this page</button></div><div\
+  \ class=\"theme-doc-markdown markdown\"><header><h1>Serverless GPU compute</h1></header>\n\
+  <div class=\"theme-admonition theme-admonition-info admonition_ZQrk alert alert--info\"\
+  ><div class=admonitionHeading_kIkl><span class=admonitionIcon_LeTk><svg viewBox=\"\
+  0 0 14 16\"><path fill-rule=evenodd d=\"M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7\
+  \ 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14\
+  \ 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z\"/></svg></span>Beta</div><div\
+  \ class=admonitionContent_dv_9><p>This feature is in <a href=/aws/en/release-notes/release-types>Beta</a>.</div></div>\n\
+  <p>This article describes serverless GPU compute on Databricks and provides recommended\
+  \ use cases, guidance for how to set up GPU compute resources, and feature limitations.</p>\n\
+  <h2 class=\"anchor anchorWithStickyNavbar_MgEv\" id=what-is-serverless-gpu-compute>What\
+  \ is serverless GPU compute?<a href=#what-is-serverless-gpu-compute class=hash-link\
+  \ aria-label=\"Direct link to What is serverless GPU compute?\" title=\"Direct link\
+  \ to What is serverless GPU compute?\">\xE2\x80\x8B</a></h2>\n<p>Serverless GPU\
+  \ compute is part of the <a href=/aws/en/compute/serverless/>Serverless compute\
+  \ offering</a>. Serverless GPU compute is specialized for custom single and multi-node\
+  \ <a href=/aws/en/machine-learning/train-model/deep-learning>deep learning</a> workloads.\
+  \ You can use serverless GPU compute to train and fine-tune custom models using\
+  \ your favorite frameworks and get state-of-the-art efficiency, performance, and\
+  \ quality.</p>\n<p>Serverless GPU compute includes:</p>\n<ul>\n<li><strong>An integrated\
+  \ experience across Notebooks, Unity Catalog, and MLflow:</strong> You can develop\
+  \ your code interactively using Notebooks.</li>\n<li><strong>Serverless GPU compute\
+  \ supports A10s</strong>.</li>\n<li><strong>Hyperparameter sweeps:</strong> You\
+  \ can perform hyperparameter sweep fine-tuning.</li>\n<li><strong>Multinode support:</strong>\
+  \ You can run distributed training workloads.</li>\n</ul>\n<p>The pre-installed\
+  \ packages on serverless GPU compute are not a replacement for <!-- -->Databricks\
+  \ Runtime<!-- --> ML. While there are common packages, not all <!-- -->Databricks\
+  \ Runtime<!-- --> ML dependencies and libraries are reflected in the serverless\
+  \ GPU compute environment.</p>\n<h2 class=\"anchor anchorWithStickyNavbar_MgEv\"\
+  \ id=recommended-use-cases>Recommended use cases<a href=#recommended-use-cases class=hash-link\
+  \ aria-label=\"Direct link to Recommended use cases\" title=\"Direct link to Recommended\
+  \ use cases\">\xE2\x80\x8B</a></h2>\n<p>Databricks recommends serverless GPU compute\
+  \ for any model training use case that requires training customizations and GPUs.</p>\n\
+  <p>For example:</p>\n<ul>\n<li>LLM Fine-tuning</li>\n<li>Computer vision</li>\n\
+  <li>Recommender systems</li>\n<li>Reinforcement learning</li>\n<li>Deep-learning-based\
+  \ time series forecasting</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_MgEv\"\
+  \ id=requirements>Requirements<a href=#requirements class=hash-link aria-label=\"\
+  Direct link to Requirements\" title=\"Direct link to Requirements\">\xE2\x80\x8B\
+  </a></h2>\n<ul>\n<li>A workspace in either <code>us-west-2</code> or <code>us-east-1</code>.</li>\n\
+  </ul>\n<h3 class=\"anchor anchorWithStickyNavbar_MgEv\" id=whats-installed>What's\
+  \ installed<a href=#whats-installed class=hash-link aria-label=\"Direct link to\
+  \ What's installed\" title=\"Direct link to What's installed\">\xE2\x80\x8B</a></h3>\n\
+  <p>Serverless GPU compute for notebooks uses environment versions, which provide\
+  \ a stable client API to ensure application compatibility. This allows Databricks\
+  \ to upgrade the server independently, delivering performance improvements, security\
+  \ enhancements, and bug fixes without requiring any code changes to workloads.</p>\n\
+  <p>Serverless GPU compute uses <strong>environment version 3</strong> in addition\
+  \ to the following packages:</p>\n<ul>\n<li><code>CUDA 12.4</code></li>\n<li><code>torch\
+  \ 2.6.0</code></li>\n<li><code>torchvision 0.21.0</code></li>\n</ul>\n<p>See <a\
+  \ href=/aws/en/release-notes/serverless/environment-version/three>Serverless environment\
+  \ version 3</a> for the packages included in system environment version 3.</p>\n\
+  <div class=\"theme-admonition theme-admonition-note admonition_ZQrk alert alert--secondary\"\
+  ><div class=admonitionHeading_kIkl><span class=admonitionIcon_LeTk><svg viewBox=\"\
+  0 0 14 16\"><path fill-rule=evenodd d=\"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28\
+  \ 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8\
+  \ 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27\
+  \ 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68\
+  \ 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86\
+  \ 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z\"/></svg></span>note</div><div\
+  \ class=admonitionContent_dv_9><p><a href=/aws/en/compute/serverless/dependencies#base-environment>Base\
+  \ environments</a> are not supported for serverless GPU compute. In order to set\
+  \ up serverless GPU compute on your environment, <a href=/aws/en/compute/serverless/dependencies#add-dependencies>specify\
+  \ the dependencies directly in the Environments side panel</a> or <code>pip install</code>\
+  \ them.</div></div>\n<h2 class=\"anchor anchorWithStickyNavbar_MgEv\" id=add-libraries-to-the-environment>Add\
+  \ libraries to the environment<a href=#add-libraries-to-the-environment class=hash-link\
+  \ aria-label=\"Direct link to Add libraries to the environment\" title=\"Direct\
+  \ link to Add libraries to the environment\">\xE2\x80\x8B</a></h2>\n<p>You can install\
+  \ additional libraries to the serverless GPU compute environment. See <a href=/aws/en/compute/serverless/dependencies#add-dependencies>\
+  \ Add dependencies to the notebook</a>.</p>\n<div class=\"theme-admonition theme-admonition-note\
+  \ admonition_ZQrk alert alert--secondary\"><div class=admonitionHeading_kIkl><span\
+  \ class=admonitionIcon_LeTk><svg viewBox=\"0 0 14 16\"><path fill-rule=evenodd d=\"\
+  M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7\
+  \ 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27\
+  \ 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68\
+  \ 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86\
+  \ 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z\"/></svg></span>note</div><div\
+  \ class=admonitionContent_dv_9><p>Adding dependencies using the <strong>Environments</strong>\
+  \ panel as seen in <a href=/aws/en/compute/serverless/dependencies#add-dependencies>\
+  \ Add dependencies to the notebook</a> is not supported for serverless GPU compute\
+  \ scheduled jobs.</div></div>\n<h2 class=\"anchor anchorWithStickyNavbar_MgEv\"\
+  \ id=-set-up-serverless-gpu-compute><a id=gpu-compute class=db-defined-anchor></a>\
+  \ Set up serverless GPU compute<a href=#-set-up-serverless-gpu-compute class=hash-link\
+  \ aria-label=\"Direct link to -set-up-serverless-gpu-compute\" title=\"Direct link\
+  \ to -set-up-serverless-gpu-compute\">\xE2\x80\x8B</a></h2>\n<p>You can select to\
+  \ use a serverless GPU compute from the notebook environment in your workspace.</p>\n\
+  <p>After you open your notebook:</p>\n<ol>\n<li>Select the <img alt=\"Environment\
+  \ icon.\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00IDE1TDQgMTIuNjQ2NUMyLjg0NTc1IDEyLjMyIDIgMTEuMjU4OCAyIDEwQzIgOC43NDEyMiAyLjg0NTc1IDcuNjc5OTggNCA3LjM1MzUyTDQgMUg1LjVMNS41IDcuMzUzNTJDNi42NTQyNSA3LjY3OTk4IDcuNSA4Ljc0MTIyIDcuNSAxMEM3LjUgMTEuMjU4OCA2LjY1NDI1IDEyLjMyIDUuNSAxMi42NDY1TDUuNSAxNUg0Wk00Ljc1IDExLjI1QzQuMDU5NjQgMTEuMjUgMy41IDEwLjY5MDQgMy41IDEwQzMuNSA5LjMwOTY0IDQuMDU5NjQgOC43NSA0Ljc1IDguNzVDNS40NDAzNiA4Ljc1IDYgOS4zMDk2NCA2IDEwQzYgMTAuNjkwNCA1LjQ0MDM2IDExLjI1IDQuNzUgMTEuMjVaIiBmaWxsPSIjNUY3MjgxIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTAuNSAxTDEwLjUgMy4zNTM1MkM5LjM0NTc1IDMuNjc5OTggOC41IDQuNzQxMjIgOC41IDZDOC41IDcuMjU4NzggOS4zNDU3NSA4LjMyMDAyIDEwLjUgOC42NDY0OFYxNUgxMlY4LjY0NjQ4QzEzLjE1NDMgOC4zMjAwMiAxNCA3LjI1ODc4IDE0IDZDMTQgNC43NDEyMiAxMy4xNTQzIDMuNjc5OTggMTIgMy4zNTM1MkwxMiAxSDEwLjVaTTExLjI1IDQuNzVDMTAuNTU5NiA0Ljc1IDEwIDUuMzA5NjQgMTAgNkMxMCA2LjY5MDM2IDEwLjU1OTYgNy4yNSAxMS4yNSA3LjI1QzExLjk0MDQgNy4yNSAxMi41IDYuNjkwMzYgMTIuNSA2QzEyLjUgNS4zMDk2NCAxMS45NDA0IDQuNzUgMTEuMjUgNC43NVoiIGZpbGw9IiM1RjcyODEiLz4KPC9zdmc+Cg==\"\
+  \ width=16 height=16 class=mdx-image> to open the <strong>Environment</strong> side\
+  \ panel.</li>\n<li>Select <strong>A10</strong> from the <strong>Accelerator</strong>\
+  \ field.</li>\n<li>Select <strong>3</strong> as the <strong>Environment version</strong>.</li>\n\
+  <li>Select <strong>Apply</strong> and then <strong>Confirm</strong> that you want\
+  \ to apply the serverless GPU compute to your notebook environment. After connecting\
+  \ to a resource, notebooks immediately begin using the available compute.</li>\n\
+  </ol>\n<div class=\"theme-admonition theme-admonition-note admonition_ZQrk alert\
+  \ alert--secondary\"><div class=admonitionHeading_kIkl><span class=admonitionIcon_LeTk><svg\
+  \ viewBox=\"0 0 14 16\"><path fill-rule=evenodd d=\"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28\
+  \ 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8\
+  \ 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27\
+  \ 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68\
+  \ 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86\
+  \ 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z\"/></svg></span>note</div><div\
+  \ class=admonitionContent_dv_9><p>Connection to your compute auto-terminates after\
+  \ 60 minutes of inactivity.</div></div>\n<h2 class=\"anchor anchorWithStickyNavbar_MgEv\"\
+  \ id=-create-and-schedule-a-job><a id=jobs class=db-defined-anchor></a> Create and\
+  \ schedule a job<a href=#-create-and-schedule-a-job class=hash-link aria-label=\"\
+  Direct link to -create-and-schedule-a-job\" title=\"Direct link to -create-and-schedule-a-job\"\
+  >\xE2\x80\x8B</a></h2>\n<p>The following steps show how to create and schedule jobs\
+  \ for your serverless GPU compute workloads. See <a href=/aws/en/notebooks/schedule-notebook-jobs>Create\
+  \ and manage scheduled notebook jobs</a> for more details.</p>\n<p>After you open\
+  \ the notebook you want to use:</p>\n<ol>\n<li>Select the <strong>Schedule</strong>\
+  \ button on the top right.</li>\n<li>Select <strong>Add schedule</strong>.</li>\n\
+  <li>Populate the <strong>New schedule</strong> form with the <em>Job name</em>,\
+  \ <em>Schedule _and _Compute</em>.</li>\n<li>Select <strong>Create</strong>.</li>\n\
+  </ol>\n<p>You can also create and schedule jobs from the <strong>Jobs and pipelines</strong>\
+  \ UI. See <a href=/aws/en/jobs/configure-job>Create a new job</a> for step-by-step\
+  \ guidance.</p>\n<h2 class=\"anchor anchorWithStickyNavbar_MgEv\" id=distributed-training>Distributed\
+  \ training<a href=#distributed-training class=hash-link aria-label=\"Direct link\
+  \ to Distributed training\" title=\"Direct link to Distributed training\">\xE2\x80\
+  \x8B</a></h2>\n<p>You can launch distributed training across multiple GPUs and/or\
+  \ nodes using the <a href=https://api-docs.databricks.com/python/serverless_gpu/index.html\
+  \ target=_blank rel=\"noopener noreferrer\">Serverless GPU Python API</a>. It provides\
+  \ a simple, unified interface for running both single-GPU and multi-GPU jobs, automatically\
+  \ handling GPU provisioning, environment setup, and workload distribution behind\
+  \ the scenes. Whether you\xE2\x80\x99re working with local GPUs or scaling out across\
+  \ nodes with remote GPUs, serverless_gpu makes distributed execution straightforward,\
+  \ requiring only minimal code changes.</p>\n<p>For example, the code below uses\
+  \ <code>serverless_gpu</code> to distribute the <code>hello_world</code> function\
+  \ to execute across 8 remote A10 GPUs.</p>\n<div class=\"language-python codeBlockContainer_yPKu\
+  \ theme-code-block\" style=\"--prism-color:#000000;--prism-background-color:hsl(230,\
+  \ 1%, 98%)\"><div class=codeBlockTitle_lOcF>Python</div><div class=codeBlockContent_qFFG><pre\
+  \ tabindex=0 class=\"prism-code language-python codeBlock_PdK_ thin-scrollbar\"\
+  \ style=\"color:#000000;background-color:hsl(230, 1%, 98%)\"><code class=codeBlockLines_oJEw><span\
+  \ class=token-line style=color:#000000><span class=\"token comment\" style=\"color:rgb(0,\
+  \ 128, 0)\"># Import the distributed decorator</span><span class=\"token plain\"\
+  ></span><br></span><span class=token-line style=color:#000000><span class=\"token\
+  \ plain\"></span><span class=\"token keyword\" style=\"color:rgb(0, 0, 255)\">from</span><span\
+  \ class=\"token plain\"> serverless_gpu </span><span class=\"token keyword\" style=\"\
+  color:rgb(0, 0, 255)\">import</span><span class=\"token plain\"> distributed</span><br></span><span\
+  \ class=token-line style=color:#000000><span class=\"token plain\" style=display:inline-block></span><br></span><span\
+  \ class=token-line style=color:#000000><span class=\"token plain\"></span><span\
+  \ class=\"token comment\" style=\"color:rgb(0, 128, 0)\"># Decorate the function\
+  \ with @distributed and specify the number of GPUs, the GPU type, and whether or\
+  \ not the GPUs are remote</span><span class=\"token plain\"></span><br></span><span\
+  \ class=token-line style=color:#000000><span class=\"token plain\"></span><span\
+  \ class=\"token decorator annotation punctuation\" style=\"color:rgb(4, 81, 165)\"\
+  >@distributed</span><span class=\"token punctuation\" style=\"color:rgb(4, 81, 165)\"\
+  >(</span><span class=\"token plain\">gpus</span><span class=\"token operator\" style=\"\
+  color:rgb(0, 0, 0)\">=</span><span class=\"token number\" style=\"color:rgb(9, 134,\
+  \ 88)\">8</span><span class=\"token punctuation\" style=\"color:rgb(4, 81, 165)\"\
+  >,</span><span class=\"token plain\"> gpu_type</span><span class=\"token operator\"\
+  \ style=\"color:rgb(0, 0, 0)\">=</span><span class=\"token string\" style=\"color:rgb(163,\
+  \ 21, 21)\">'A10'</span><span class=\"token punctuation\" style=\"color:rgb(4, 81,\
+  \ 165)\">,</span><span class=\"token plain\"> remote</span><span class=\"token operator\"\
+  \ style=\"color:rgb(0, 0, 0)\">=</span><span class=\"token boolean\">True</span><span\
+  \ class=\"token punctuation\" style=\"color:rgb(4, 81, 165)\">)</span><span class=\"\
+  token plain\"></span><br></span><span class=token-line style=color:#000000><span\
+  \ class=\"token plain\"></span><span class=\"token keyword\" style=\"color:rgb(0,\
+  \ 0, 255)\">def</span><span class=\"token plain\"> </span><span class=\"token function\"\
+  \ style=\"color:rgb(0, 0, 255)\">hello_world</span><span class=\"token punctuation\"\
+  \ style=\"color:rgb(4, 81, 165)\">(</span><span class=\"token plain\">s</span><span\
+  \ class=\"token punctuation\" style=\"color:rgb(4, 81, 165)\">:</span><span class=\"\
+  token plain\"> </span><span class=\"token builtin\" style=\"color:rgb(0, 112, 193)\"\
+  >str</span><span class=\"token punctuation\" style=\"color:rgb(4, 81, 165)\">)</span><span\
+  \ class=\"token plain\"> </span><span class=\"token operator\" style=\"color:rgb(0,\
+  \ 0, 0)\">-</span><span class=\"token operator\" style=\"color:rgb(0, 0, 0)\">></span><span\
+  \ class=\"token plain\"> </span><span class=\"token boolean\">None</span><span class=\"\
+  token punctuation\" style=\"color:rgb(4, 81, 165)\">:</span><span class=\"token\
+  \ plain\"></span><br></span><span class=token-line style=color:#000000><span class=\"\
+  token plain\">  </span><span class=\"token keyword\" style=\"color:rgb(0, 0, 255)\"\
+  >print</span><span class=\"token punctuation\" style=\"color:rgb(4, 81, 165)\">(</span><span\
+  \ class=\"token string\" style=\"color:rgb(163, 21, 21)\">'hello_world '</span><span\
+  \ class=\"token punctuation\" style=\"color:rgb(4, 81, 165)\">,</span><span class=\"\
+  token plain\"> s</span><span class=\"token punctuation\" style=\"color:rgb(4, 81,\
+  \ 165)\">)</span><span class=\"token plain\"></span><br></span><span class=token-line\
+  \ style=color:#000000><span class=\"token plain\" style=display:inline-block></span><br></span><span\
+  \ class=token-line style=color:#000000><span class=\"token plain\"></span><span\
+  \ class=\"token comment\" style=\"color:rgb(0, 128, 0)\"># Trigger the distributed\
+  \ execution of the hello_world function</span><span class=\"token plain\"></span><br></span><span\
+  \ class=token-line style=color:#000000><span class=\"token plain\">hello_world</span><span\
+  \ class=\"token punctuation\" style=\"color:rgb(4, 81, 165)\">.</span><span class=\"\
+  token plain\">distributed</span><span class=\"token punctuation\" style=\"color:rgb(4,\
+  \ 81, 165)\">(</span><span class=\"token plain\">s</span><span class=\"token operator\"\
+  \ style=\"color:rgb(0, 0, 0)\">=</span><span class=\"token string\" style=\"color:rgb(163,\
+  \ 21, 21)\">'abc'</span><span class=\"token punctuation\" style=\"color:rgb(4, 81,\
+  \ 165)\">)</span><br></span></code></pre><div class=buttonGroup_iGMV><button type=button\
+  \ aria-label=\"Copy code to clipboard\" title=Copy class=clean-btn><span class=copyButtonIcons_f0uW\
+  \ aria-hidden=true><svg viewBox=\"0 0 24 24\" class=copyButtonIcon_Eny4><path fill=currentColor\
+  \ d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2\
+  \ 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"/></svg><svg viewBox=\"0 0 24 24\"\
+  \ class=copyButtonSuccessIcon_V7aT><path fill=currentColor d=M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\
+  \ /></svg></span></button></div></div></div>\n<p>After running the above code, the\
+  \ results and logs appear in the <strong>Experiment</strong> section of your workspace.</p>\n\
+  <p>Start by importing the <a href=/aws/en/machine-learning/sgc-examples/gpu-distributed-training#starter-a10>starter\
+  \ notebook</a> to get hands-on with the API, then explore the <a href=#notebook-examples>notebook\
+  \ examples</a> to see how it\xE2\x80\x99s used in real distributed training scenarios.</p>\n\
+  <p>For full details, refer to the <a href=https://api-docs.databricks.com/python/serverless_gpu/index.html\
+  \ target=_blank rel=\"noopener noreferrer\">Serverless GPU Python API</a> documentation.</p>\n\
+  <h2 class=\"anchor anchorWithStickyNavbar_MgEv\" id=limitations>Limitations<a href=#limitations\
+  \ class=hash-link aria-label=\"Direct link to Limitations\" title=\"Direct link\
+  \ to Limitations\">\xE2\x80\x8B</a></h2>\n<ul>\n<li>\n<p>Serverless GPU compute\
+  \ only supports A10 or similar compute.</p>\n</li>\n<li>\n<p><a href=/aws/en/security/network/classic/privatelink>PrivateLink</a>\
+  \ is not supported. Storage or pip repos behind PrivateLink are not supported.</p>\n\
+  </li>\n<li>\n<p>Serverless GPU compute is <strong>not supported for compliance security\
+  \ profile workspaces (like HIPAA or PCT)</strong>. Processing regulated data is\
+  \ not supported at this time.</p>\n</li>\n<li>\n<p>Serverless GPU compute is only\
+  \ supported on interactive environments.</p>\n</li>\n<li>\n<p>Scheduled jobs on\
+  \ Serverless GPU compute:</p>\n<ul>\n<li>Only supported for a single task.</li>\n\
+  <li>Auto recovery behavior for incompatible package versions that are associated\
+  \ with your notebook is not supported.</li>\n</ul>\n</li>\n</ul>\n<h2 class=\"anchor\
+  \ anchorWithStickyNavbar_MgEv\" id=notebook-examples>Notebook examples<a href=#notebook-examples\
+  \ class=hash-link aria-label=\"Direct link to Notebook examples\" title=\"Direct\
+  \ link to Notebook examples\">\xE2\x80\x8B</a></h2>\n<p>Below are various notebook\
+  \ examples that demonstrate how to use Serverless GPU compute for different scenarios.</p>\n\
+  <div class=scrollable-table-container><table><thead><tr><th><p>Task<th><p>Description<tbody><tr><td><p><a\
+  \ href=/aws/en/machine-learning/sgc-examples/gpu-llms>Large language models (LLMs)</a><td><p>Examples\
+  \ for fine-tuning large language models including parameter-efficient methods like\
+  \ Low-Rank Adaptation (LoRA) and supervised fine-tuning approaches.<tbody><tr><td><p><a\
+  \ href=/aws/en/machine-learning/sgc-examples/gpu-computer-vision>Computer vision</a><td><p>Examples\
+  \ for computer vision tasks including object detection and image classification.<tbody><tr><td><p><a\
+  \ href=/aws/en/machine-learning/sgc-examples/gpu-recommendation>Deep learning based\
+  \ recommender systems</a><td><p>Examples for building recommendation systems using\
+  \ modern deep learning approaches like two-tower models.<tbody><tr><td><p><a href=/aws/en/machine-learning/sgc-examples/gpu-classic-ml>Classic\
+  \ ML</a><td><p>Examples for traditional machine learning tasks including XGBoost\
+  \ model training and time series forecasting.<tbody><tr><td><p><a href=/aws/en/machine-learning/sgc-examples/gpu-distributed-training>Multi-node\
+  \ distributed training</a><td><p>Examples for scaling training across multiple GPUs\
+  \ and nodes using the Serverless GPU API, including hyperparameter sweeps and distributed\
+  \ fine-tuning.</table></div></div><footer class=\"theme-doc-footer docusaurus-mt-lg\"\
+  ><div class=\"row margin-top--sm theme-doc-footer-edit-meta-row\"><div class=col></div><div\
+  \ class=\"col lastUpdated_df0x\"><span class=theme-last-updated>Last updated<!--\
+  \ --> on <b><time datetime=2025-08-28T00:00:00.000Z itemprop=dateModified>Aug 28,\
+  \ 2025</time></b></span></div></div></footer></article><nav class=\"pagination-nav\
+  \ docusaurus-mt-lg\" aria-label=\"Docs pages\"></nav></div></div><div class=\"col\
+  \ col--3\"><div class=\"tableOfContents_KI7p thin-scrollbar theme-doc-toc-desktop\"\
+  ><ul class=\"table-of-contents table-of-contents__left-border\"><li><a href=#what-is-serverless-gpu-compute\
+  \ class=\"table-of-contents__link toc-highlight\">What is serverless GPU compute?</a><li><a\
+  \ href=#recommended-use-cases class=\"table-of-contents__link toc-highlight\">Recommended\
+  \ use cases</a><li><a href=#requirements class=\"table-of-contents__link toc-highlight\"\
+  >Requirements</a><ul><li><a href=#whats-installed class=\"table-of-contents__link\
+  \ toc-highlight\">What's installed</a></ul><li><a href=#add-libraries-to-the-environment\
+  \ class=\"table-of-contents__link toc-highlight\">Add libraries to the environment</a><li><a\
+  \ href=#-set-up-serverless-gpu-compute class=\"table-of-contents__link toc-highlight\"\
+  ><link class=db-defined-anchor> Set up serverless GPU compute</a><li><a href=#-create-and-schedule-a-job\
+  \ class=\"table-of-contents__link toc-highlight\"><link class=db-defined-anchor>\
+  \ Create and schedule a job</a><li><a href=#distributed-training class=\"table-of-contents__link\
+  \ toc-highlight\">Distributed training</a><li><a href=#limitations class=\"table-of-contents__link\
+  \ toc-highlight\">Limitations</a><li><a href=#notebook-examples class=\"table-of-contents__link\
+  \ toc-highlight\">Notebook examples</a></ul></div></div></div><div id=suPageRateApp></div></div></main></div></div></div><footer\
+  \ class=\"footer footer--dark\"><div class=\"container container-fluid\"><div class=\"\
+  footer__links text--center\"><div class=footer__links><a href=\"mailto:doc-feedback@databricks.com?subject=Documentation\
+  \ Feedback\" target=_blank rel=\"noopener noreferrer\" class=footer__link-item>Send\
+  \ us feedback<svg width=13.5 height=13.5 aria-hidden=true viewBox=\"0 0 24 24\"\
+  \ class=iconExternalLink_Lu68><path fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><span class=footer__link-separator>\xC2\
+  \xB7</span><a href=https://www.databricks.com/legal/privacynotice target=_blank\
+  \ rel=\"noopener noreferrer\" class=footer__link-item>Privacy Notice<svg width=13.5\
+  \ height=13.5 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><span class=footer__link-separator>\xC2\
+  \xB7</span><a href=https://www.databricks.com/terms-of-use target=_blank rel=\"\
+  noopener noreferrer\" class=footer__link-item>Terms of Use<svg width=13.5 height=13.5\
+  \ aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path fill=currentColor\
+  \ d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828\
+  \ 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><span class=footer__link-separator>\xC2\
+  \xB7</span><a href=https://www.databricks.com/legal/modern-slavery-policy-statement\
+  \ target=_blank rel=\"noopener noreferrer\" class=footer__link-item>Modern Slavery\
+  \ Statement<svg width=13.5 height=13.5 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><span class=footer__link-separator>\xC2\
+  \xB7</span><a href=https://www.databricks.com/legal/supplemental-privacy-notice-california-residents\
+  \ target=_blank rel=\"noopener noreferrer\" class=footer__link-item>California Privacy<svg\
+  \ width=13.5 height=13.5 aria-hidden=true viewBox=\"0 0 24 24\" class=iconExternalLink_Lu68><path\
+  \ fill=currentColor d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035\
+  \ 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/></svg></a><span class=footer__link-separator>\xC2\
+  \xB7</span><span class=footer__link-item><a href=javascript:OneTrust.ToggleInfoDisplay()>Your\
+  \ Privacy Choices\xC2\_<img alt=\"\" src=https://www.databricks.com/sites/default/files/2022-12/gpcicon_small.png\
+  \ data-ot-ignore=1 class=\"dbgpcicon inline-block max-h-[15px] w-auto\" width=31\
+  \ height=15></a></span></div></div><div class=\"footer__bottom text--center\"><div\
+  \ class=footer__copyright>\xC2\xA9 Databricks 2025. All rights reserved. Apache,\
+  \ Apache Spark, Spark and the Spark logo are trademarks of the <a href=https://www.apache.org/\
+  \ target=_blank>Apache Software Foundation</a>.</div></div></div></footer></div>"
+label: null

@@ -1,0 +1,1017 @@
+url: https://news.ycombinator.com/item?id=45066999
+raw_content: "<html lang=\"en\" op=\"item\"><head><meta name=\"referrer\" content=\"\
+  origin\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\
+  ><link rel=\"stylesheet\" type=\"text/css\" href=\"news.css?rdkg5pOPauT7LmsdOtnz\"\
+  ><link rel=\"icon\" href=\"y18.svg\"><link rel=\"canonical\" href=\"https://news.ycombinator.com/item?id=45066999\"\
+  ><title>SQLite&#x27;s documentation about its durability properties is unclear |\
+  \ Hacker News</title></head><body><center><table id=\"hnmain\" border=\"0\" cellpadding=\"\
+  0\" cellspacing=\"0\" width=\"85%\" bgcolor=\"#f6f6ef\"><tr><td bgcolor=\"#ff6600\"\
+  ><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"\
+  padding:2px\"><tr><td style=\"width:18px;padding-right:4px\"><a href=\"https://news.ycombinator.com\"\
+  ><img src=\"y18.svg\" width=\"18\" height=\"18\" style=\"border:1px white solid;\
+  \ display:block\"></a></td><td style=\"line-height:12pt; height:10px;\"><span class=\"\
+  pagetop\"><b class=\"hnname\"><a href=\"news\">Hacker News</a></b><a href=\"newest\"\
+  >new</a> | <a href=\"front\">past</a> | <a href=\"newcomments\">comments</a> | <a\
+  \ href=\"ask\">ask</a> | <a href=\"show\">show</a> | <a href=\"jobs\">jobs</a> |\
+  \ <a href=\"submit\" rel=\"nofollow\">submit</a></span></td><td style=\"text-align:right;padding-right:4px;\"\
+  ><span class=\"pagetop\"><a href=\"login?goto=item%3Fid%3D45066999\">login</a></span></td></tr></table></td></tr><tr\
+  \ style='height:10px'/><tr id=\"bigbox\"><td><table class=\"fatitem\" border=\"\
+  0\"><tr class=\"athing submission\" id=\"45066999\"><td align=\"right\" valign=\"\
+  top\" class=\"title\"><span class=\"rank\"></span></td><td valign=\"top\" class=\"\
+  votelinks\"><center><a id='up_45066999' href='vote?id=45066999&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><span\
+  \ class=\"titleline\"><a href=\"https://www.agwa.name/blog/post/sqlite_durability\"\
+  >SQLite&#x27;s documentation about its durability properties is unclear</a><span\
+  \ class=\"sitebit comhead\"> (<a href=\"from?site=agwa.name\"><span class=\"sitestr\"\
+  >agwa.name</span></a>)</span></span></td></tr><tr><td colspan=\"2\"></td><td class=\"\
+  subtext\"><span class=\"subline\"><span class=\"score\" id=\"score_45066999\">119\
+  \ points</span> by <a href=\"user?id=ciconia\" class=\"hnuser\">ciconia</a> <span\
+  \ class=\"age\" title=\"2025-08-29T17:30:29 1756488629\"><a href=\"item?id=45066999\"\
+  >9 hours ago</a></span> <span id=\"unv_45066999\"></span> | <a href=\"hide?id=45066999&amp;goto=item%3Fid%3D45066999\"\
+  >hide</a> | <a href=\"https://hn.algolia.com/?query=SQLite%27s%20documentation%20about%20its%20durability%20properties%20is%20unclear&type=story&dateRange=all&sort=byDate&storyText=false&prefix&page=0\"\
+  \ class=\"hnpast\">past</a> | <a href=\"fave?id=45066999&amp;auth=0a198e519961c8354bbffa0dd4b698a5a6e0bcfd\"\
+  >favorite</a> | <a href=\"item?id=45066999\">47&nbsp;comments</a></span></td></tr><tr><td\
+  \ colspan=\"2\"></td><td><div class=\"toptext\"></div></td></tr><tr style='height:6px'/><tr><td\
+  \ colspan=\"2\"></td><td><form action=\"comment\" method=\"post\"><input type=\"\
+  hidden\" name=\"parent\" value=\"45066999\"><input type=\"hidden\" name=\"goto\"\
+  \ value=\"item?id=45066999\"><input type=\"hidden\" name=\"hmac\" value=\"2a3da0d06154b24adb2702c877c254b74bf4676a\"\
+  ><textarea name=\"text\" rows=\"8\" cols=\"80\" wrap=\"virtual\"></textarea><br><br>\n\
+  <input type=\"submit\" value=\"add comment\"></form></td></tr></table><br>\n<table\
+  \ border=\"0\" class=\"comment-tree\"><tr class=\"athing comtr\" id=\"45070779\"\
+  ><td><table border=\"0\"><tr><td class=\"ind\" indent=\"0\"><img src=\"s.gif\" height=\"\
+  1\" width=\"0\"></td><td valign=\"top\" class=\"votelinks\"><center><a id='up_45070779'\
+  \ href='vote?id=45070779&amp;how=up&amp;goto=item%3Fid%3D45066999'><div class='votearrow'\
+  \ title='upvote'></div></a></center></td><td class=\"default\"><div style=\"margin-top:2px;\
+  \ margin-bottom:-10px;\"><span class=\"comhead\"><a href=\"user?id=liuliu\" class=\"\
+  hnuser\">liuliu</a> <span class=\"age\" title=\"2025-08-30T00:05:35 1756512335\"\
+  ><a href=\"item?id=45070779\">2 hours ago</a></span> <span id=\"unv_45070779\"></span><span\
+  \ class=\"navs\"> | <a href=\"#45070744\" class=\"clicky\" aria-hidden=\"true\"\
+  >next</a> <a class=\"togg clicky\" id=\"45070779\" n=\"1\" href=\"javascript:void(0)\"\
+  >[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"\
+  comment\"><div class=\"commtext c00\">Marc Brooker said this: <a href=\"https:&#x2F;&#x2F;x.com&#x2F;MarcJBrooker&#x2F;status&#x2F;1960809302333251876\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;MarcJBrooker&#x2F;status&#x2F;1960809302333251876</a>\
+  \ which echos my sentiment. I will just repost it here:<p>&gt; More broadly, I don&#x27;t\
+  \ think a single definition of &#x27;durable&#x27; (as in ACID D) for transactions\
+  \ is particularly useful.<p>&gt; Much more useful is to ask &quot;what kinds of\
+  \ failures could cause committed transactions to be lost?&quot;<p>All these articles\
+  \ talking about durability as a singular term should be warned. Writing to disk\
+  \ is <i>not</i> durable under certain circumstances. <i>fsync</i> is <i>not</i>\
+  \ durable under certain circumstances. Two-phase commit is <i>not</i> durable under\
+  \ certain circumstances. Multi-data center commit is <i>not</i> durable against\
+  \ the Death Star too.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"\
+  reply?id=45070779&amp;goto=item%3Fid%3D45066999%2345070779\" rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45070744\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45070744' href='vote?id=45070744&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=sethev\" class=\"hnuser\">sethev</a> <span class=\"age\" title=\"\
+  2025-08-30T00:00:05 1756512005\"><a href=\"item?id=45070744\">2 hours ago</a></span>\
+  \ <span id=\"unv_45070744\"></span><span class=\"navs\"> | <a href=\"#45070779\"\
+  \ class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"#45070488\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45070744\"\
+  \ n=\"3\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">The documentation seems pretty\
+  \ clear to me - it describes specifically what each option controls and the implications\
+  \ of using it. Besides debating whether the default behavior is should be described\
+  \ as durable or not, this post&#x27;s author seems to understand exactly what each\
+  \ option actually does.<p>Perhaps what&#x27;s unclear is when to select which option?</div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45070744&amp;goto=item%3Fid%3D45066999%2345070744\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45070788\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45070788' href='vote?id=45070788&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=agwa\" class=\"hnuser\">agwa</a> <span class=\"age\" title=\"2025-08-30T00:07:44\
+  \ 1756512464\"><a href=\"item?id=45070788\">2 hours ago</a></span> <span id=\"unv_45070788\"\
+  ></span><span class=\"navs\"> | <a href=\"#45070744\" class=\"clicky\" aria-hidden=\"\
+  true\">parent</a> | <a href=\"#45070488\" class=\"clicky\" aria-hidden=\"true\"\
+  >next</a> <a class=\"togg clicky\" id=\"45070788\" n=\"2\" href=\"javascript:void(0)\"\
+  >[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"\
+  comment\"><div class=\"commtext c00\">I found the documentation much harder to parse\
+  \ than the equivalent PostgreSQL docs (<a href=\"https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;wal-async-commit.html\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;wal-async-commit.htm...</a>).<p>Also,\
+  \ even if I&#x27;ve understood the docs correctly, a number of people in this thread\
+  \ and elsewhere have come to a different interpretation.  I think that&#x27;s much\
+  \ less likely to happen with the PostgreSQL docs.<p>And I&#x27;m sure you can understand\
+  \ why I began to doubt my own interpretation of the docs when SQLite&#x27;s creator\
+  \ posted a comment saying the exact opposite of what I thought the docs said!</div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45070788&amp;goto=item%3Fid%3D45066999%2345070788\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45071262\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45071262' href='vote?id=45071262&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=sethev\" class=\"hnuser\">sethev</a> <span class=\"age\" title=\"\
+  2025-08-30T01:53:21 1756518801\"><a href=\"item?id=45071262\">53 minutes ago</a></span>\
+  \ <span id=\"unv_45071262\"></span><span class=\"navs\"> | <a href=\"#45070744\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45070788\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45070488\" class=\"clicky\"\
+  \ aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45071262\" n=\"1\"\
+  \ href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">Fair! Fwiw, I enjoyed the post\
+  \ - hopefully my comment wasn&#x27;t harsh.<p>I think it does come down to the definition\
+  \ of durable. The default in SQLite is that the data for a transaction will be written\
+  \ all the way to disk (with an fsync) and the rollback journal will be deleted (but\
+  \ without an fsync).<p>In this model, there is chance of losing only the last transaction\
+  \ and only if the whole system crashes (like a power failure) after deleting the\
+  \ journal but before your file system makes that durable. If your application crashes,\
+  \ you&#x27;re still fine.<p>That&#x27;s significantly more durable than an asynchronous\
+  \ commit in Postgres, though. In an asynchronous commit, the transaction will complete\
+  \ before any data is written to disk at all - the data is only in memory, and many\
+  \ transactions can queue up in memory during the wal_writer_delay. All of those\
+  \ will definitely be lost if Postgres stops uncleanly for any reason (for example\
+  \ a crash, oomkill, or power failure).</div><div class=\"reply\"><p><font size=\"\
+  1\"><u><a href=\"reply?id=45071262&amp;goto=item%3Fid%3D45066999%2345071262\" rel=\"\
+  nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr class=\"\
+  athing comtr\" id=\"45070488\"><td><table border=\"0\"><tr><td class=\"ind\" indent=\"\
+  0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"top\" class=\"\
+  votelinks\"><center><a id='up_45070488' href='vote?id=45070488&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=dang\" class=\"hnuser\">dang</a> <span class=\"age\" title=\"2025-08-29T23:17:54\
+  \ 1756509474\"><a href=\"item?id=45070488\">3 hours ago</a></span> <span id=\"unv_45070488\"\
+  ></span><span class=\"navs\"> | <a href=\"#45070744\" class=\"clicky\" aria-hidden=\"\
+  true\">prev</a> | <a href=\"#45068066\" class=\"clicky\" aria-hidden=\"true\">next</a>\
+  \ <a class=\"togg clicky\" id=\"45070488\" n=\"1\" href=\"javascript:void(0)\">[\u2013\
+  ]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"comment\"\
+  ><div class=\"commtext c00\">Recent and related:<p><i>SQLite (with WAL) doesn&#x27;t\
+  \ do `fsync` on each commit under default settings</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=45005071\"\
+  >https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=45005071</a> - Aug 2025 (90\
+  \ comments)<p>with a relevant comment by the creator of SQLite here: <a href=\"\
+  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=45014296\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=45014296</a><p>(via\
+  \ <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=45068594\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=45068594</a>\
+  \ - thanks int_19h!)</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"\
+  reply?id=45070488&amp;goto=item%3Fid%3D45066999%2345070488\" rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068066\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068066' href='vote?id=45068066&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=NewsaHackO\" class=\"hnuser\">NewsaHackO</a> <span class=\"age\"\
+  \ title=\"2025-08-29T19:02:49 1756494169\"><a href=\"item?id=45068066\">7 hours\
+  \ ago</a></span> <span id=\"unv_45068066\"></span><span class=\"navs\"> | <a href=\"\
+  #45070488\" class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"#45068720\"\
+  \ class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"\
+  45068066\" n=\"17\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"\
+  ></span></span></span></div><br>\n<div class=\"comment\"><div class=\"commtext c00\"\
+  >&gt; By default, SQLite is not durable, because the default value of journal_mode\
+  \ is DELETE, and the default value of synchronous is FULL, which doesn&#x27;t provide\
+  \ durability in DELETE mode.<p>From the documentation, it seems like synchronous\
+  \ being FULL does provide durability of the database in DELETE mode, as FULL means\
+  \ it calls fsync after the transaction is completed. I think you may be confusing\
+  \ durability of the journal file with durability of the database. I don&#x27;t think\
+  \ WAL can ever really have a durable transaction; it is essentially based on leaving\
+  \ a transaction open until it gets &quot;check-pointed&quot; or actually committed\
+  \ to the database file.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"\
+  reply?id=45068066&amp;goto=item%3Fid%3D45066999%2345068066\" rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068130\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068130' href='vote?id=45068130&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=mlyle\" class=\"hnuser\">mlyle</a> <span class=\"age\" title=\"\
+  2025-08-29T19:08:29 1756494509\"><a href=\"item?id=45068130\">7 hours ago</a></span>\
+  \ <span id=\"unv_45068130\"></span><span class=\"navs\"> | <a href=\"#45068066\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45068136\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45068130\"\
+  \ n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">&gt; I don&#x27;t think WAL can\
+  \ ever really have a durable transaction; it is essentially based on leaving a transaction\
+  \ open until it gets &quot;check-pointed&quot; or actually committed to the database\
+  \ file.<p>In general: WAL means you write the transaction to the WAL, fsync (in\
+  \ sqlite, this depends upon the sync mode], and then return it&#x27;s done to the\
+  \ application.  The transaction is then durable: even if the database crashes, the\
+  \ contents of the WAL will be applied to the database file.<p>Checkpointing later\
+  \ just lets you throw away that part of the WAL and not have to replay as much to\
+  \ the database file.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"\
+  reply?id=45068130&amp;goto=item%3Fid%3D45066999%2345068130\" rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068136\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068136' href='vote?id=45068136&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=agwa\" class=\"hnuser\">agwa</a> <span class=\"age\" title=\"2025-08-29T19:08:57\
+  \ 1756494537\"><a href=\"item?id=45068136\">7 hours ago</a></span> <span id=\"unv_45068136\"\
+  ></span><span class=\"navs\"> | <a href=\"#45068066\" class=\"clicky\" aria-hidden=\"\
+  true\">parent</a> | <a href=\"#45068130\" class=\"clicky\" aria-hidden=\"true\"\
+  >prev</a> | <a href=\"#45068720\" class=\"clicky\" aria-hidden=\"true\">next</a>\
+  \ <a class=\"togg clicky\" id=\"45068136\" n=\"15\" href=\"javascript:void(0)\"\
+  >[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"\
+  comment\"><div class=\"commtext c00\">My understanding of DELETE mode is that the\
+  \ transaction is not committed until the rollback journal file is deleted - if the\
+  \ rollback journal is present when sqlite opens a database, it applies the rollback\
+  \ journal to undo the changes that the transaction made. See <a href=\"https:&#x2F;&#x2F;www.sqlite.org&#x2F;atomiccommit.html#1_deleting_the_rollback_journal\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;www.sqlite.org&#x2F;atomiccommit.html#1_deleting_the_roll...</a><p>If\
+  \ the directory containing the rollback journal is not fsynced after the journal\
+  \ file is deleted, then the journal file might rematerialize after a power failure,\
+  \ causing sqlite to roll back a committed transaction.  And fsyncing the directory\
+  \ doesn&#x27;t seem to happen unless you set synchronous to EXTRA, per the docs\
+  \ cited in the blog post.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"\
+  reply?id=45068136&amp;goto=item%3Fid%3D45066999%2345068136\" rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45070485\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45070485' href='vote?id=45070485&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=kbaker\" class=\"hnuser\">kbaker</a> <span class=\"age\" title=\"\
+  2025-08-29T23:17:30 1756509450\"><a href=\"item?id=45070485\">3 hours ago</a></span>\
+  \ <span id=\"unv_45070485\"></span><span class=\"navs\"> | <a href=\"#45068066\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45068136\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45068352\" class=\"clicky\"\
+  \ aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45070485\" n=\"2\"\
+  \ href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">&gt; If the directory containing\
+  \ the rollback journal is not fsynced after the journal file is deleted, then the\
+  \ journal file might rematerialize after a power failure, causing sqlite to roll\
+  \ back a committed transaction. And fsyncing the directory doesn&#x27;t seem to\
+  \ happen unless you set synchronous to EXTRA, per the docs cited in the blog post.<p>I\
+  \ think this is the part that is confusing.<p>The fsyncing of the directory is supposed\
+  \ to be done by the filesystem&#x2F;OS itself, <i>not</i> the application.<p>From\
+  \ man fsync,<p><pre><code>    As well as flushing the file data, fsync() also flushes\
+  \ the metadata information associated with the file (see inode(7)).\n</code></pre>\n\
+  So from sqlite&#x27;s perspective on DELETE it is either: before the fsync call,\
+  \ and not committed, or after the fsync call, and committed (or partially written\
+  \ somehow and needing rollback.)<p>Unfortunately it seems like this has traditionally\
+  \ been broken on many systems, requiring workarounds, like SYNCHRONOUS = EXTRA.</div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45070485&amp;goto=item%3Fid%3D45066999%2345070485\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45070584\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"3\"><img src=\"s.gif\" height=\"1\" width=\"120\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45070584' href='vote?id=45070584&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=agwa\" class=\"hnuser\">agwa</a> <span class=\"age\" title=\"2025-08-29T23:35:47\
+  \ 1756510547\"><a href=\"item?id=45070584\">3 hours ago</a></span> <span id=\"unv_45070584\"\
+  ></span><span class=\"navs\"> | <a href=\"#45068066\" class=\"clicky\" aria-hidden=\"\
+  true\">root</a> | <a href=\"#45070485\" class=\"clicky\" aria-hidden=\"true\">parent</a>\
+  \ | <a href=\"#45068352\" class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"\
+  togg clicky\" id=\"45070584\" n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span\
+  \ class=\"onstory\"></span></span></span></div><br>\n<div class=\"comment\"><div\
+  \ class=\"commtext c00\">No, the metadata is information like the modification time\
+  \ and permissions, not the directory entry.<p>The next paragraph in the man page\
+  \ explains this:<p>&gt; Calling fsync() does not necessarily ensure that the entry\
+  \ in the directory containing the file has  also reached disk.  For that an explicit\
+  \ fsync() on a file descriptor for the directory is also needed.<p><a href=\"https:&#x2F;&#x2F;man7.org&#x2F;linux&#x2F;man-pages&#x2F;man2&#x2F;fsync.2.html\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;man7.org&#x2F;linux&#x2F;man-pages&#x2F;man2&#x2F;fsync.2.html</a><p>Edit\
+  \ to add: I don&#x27;t think there&#x27;s a single Unix-like OS on which fsync would\
+  \ also fsync the directory, since a file can appear in an arbitrary number of directories,\
+  \ and the kernel doesn&#x27;t know all the directories in which an open file appears.<p>This\
+  \ is a moot point anyways, because in DELETE mode, the operation that needs to be\
+  \ durably persisted is the unlinking of the journal file - what would you fsync\
+  \ for that besides the directory itself?</div><div class=\"reply\"><p><font size=\"\
+  1\"><u><a href=\"reply?id=45070584&amp;goto=item%3Fid%3D45066999%2345070584\" rel=\"\
+  nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr class=\"\
+  athing comtr\" id=\"45068352\"><td><table border=\"0\"><tr><td class=\"ind\" indent=\"\
+  2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"top\" class=\"\
+  votelinks\"><center><a id='up_45068352' href='vote?id=45068352&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=NewsaHackO\" class=\"hnuser\">NewsaHackO</a> <span class=\"age\"\
+  \ title=\"2025-08-29T19:29:15 1756495755\"><a href=\"item?id=45068352\">7 hours\
+  \ ago</a></span> <span id=\"unv_45068352\"></span><span class=\"navs\"> | <a href=\"\
+  #45068066\" class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45068136\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45070485\" class=\"\
+  clicky\" aria-hidden=\"true\">prev</a> | <a href=\"#45068720\" class=\"clicky\"\
+  \ aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45068352\" n=\"12\"\
+  \ href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">&gt;if the rollback journal is\
+  \ present when sqlite opens a database, it applies the rollback journal to undo\
+  \ the changes that the transaction made. See <a href=\"https:&#x2F;&#x2F;www.sqlite.org&#x2F;atomiccommit.html#1_deleting_the_roll\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;www.sqlite.org&#x2F;atomiccommit.html#1_deleting_the_roll</a>...<p>I\
+  \ don&#x27;t follow. How would fsyncing the rollback journal affect the durability\
+  \ of the actual database? Do you actually think that the database would reapply\
+  \ an already committed journal whose ID in the header already indicates that the\
+  \ transaction was committed, when the database is already consistent? I really think\
+  \ you should re-review the definition of durability of a database, especially before\
+  \ saying the creator of SQLite is incorrect about its implementation.</div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45068352&amp;goto=item%3Fid%3D45066999%2345068352\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068594\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"3\"><img src=\"s.gif\" height=\"1\" width=\"120\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068594' href='vote?id=45068594&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=int_19h\" class=\"hnuser\">int_19h</a> <span class=\"age\" title=\"\
+  2025-08-29T19:49:28 1756496968\"><a href=\"item?id=45068594\">6 hours ago</a></span>\
+  \ <span id=\"unv_45068594\"></span><span class=\"navs\"> | <a href=\"#45068066\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45068352\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45068767\" class=\"clicky\"\
+  \ aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45068594\" n=\"9\"\
+  \ href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">It&#x27;s specifically about\
+  \ fsyncing journal <i>deletion</i>. The problem isn&#x27;t that it would <i>re</i>apply\
+  \ it if it was already used to rollback. Rather, the problem is that if you commit,\
+  \ and that commit has succeeded (and so your app believes that it has written the\
+  \ data and might e.g. perform some other actions on it), the deletion of the now-unneeded\
+  \ journal might not be flushed to disk in event of power loss or similar. So when\
+  \ you start the app again, SQLite sees said rollback journal, and - since it would\
+  \ be considered &quot;hot&quot; - applies it, effectively reverting the transaction\
+  \ that was supposedly already committed.<p>FWIW I don&#x27;t think it&#x27;s <i>wrong</i>\
+  \ per se. The article links to a HN comment in which Richard Hipp explains why this\
+  \ is the default behavior, and it does make sense: <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=45014296\"\
+  >https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=45014296</a>. At the same time,\
+  \ clearly, the definition of &quot;durable&quot; here could use some clarification.</div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45068594&amp;goto=item%3Fid%3D45066999%2345068594\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068841\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"4\"><img src=\"s.gif\" height=\"1\" width=\"160\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068841' href='vote?id=45068841&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=agwa\" class=\"hnuser\">agwa</a> <span class=\"age\" title=\"2025-08-29T20:10:56\
+  \ 1756498256\"><a href=\"item?id=45068841\">6 hours ago</a></span> <span id=\"unv_45068841\"\
+  ></span><span class=\"navs\"> | <a href=\"#45068066\" class=\"clicky\" aria-hidden=\"\
+  true\">root</a> | <a href=\"#45068594\" class=\"clicky\" aria-hidden=\"true\">parent</a>\
+  \ | <a href=\"#45068926\" class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"\
+  togg clicky\" id=\"45068841\" n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span\
+  \ class=\"onstory\"></span></span></span></div><br>\n<div class=\"comment\"><div\
+  \ class=\"commtext c00\">Yes, that&#x27;s exactly right.<p>Note that the comment\
+  \ by Richard Hipp is justifying why <i>WAL</i> mode is not durable by default. It&#x27;s\
+  \ a completely reasonable explanation, and would be for DELETE mode too, yet his\
+  \ comment claims that DELETE mode <i>is</i> durable by default, which I can&#x27;t\
+  \ reconcile with the docs.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"\
+  reply?id=45068841&amp;goto=item%3Fid%3D45066999%2345068841\" rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068926\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"4\"><img src=\"s.gif\" height=\"1\" width=\"160\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068926' href='vote?id=45068926&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=NewsaHackO\" class=\"hnuser\">NewsaHackO</a> <span class=\"age\"\
+  \ title=\"2025-08-29T20:19:26 1756498766\"><a href=\"item?id=45068926\">6 hours\
+  \ ago</a></span> <span id=\"unv_45068926\"></span><span class=\"navs\"> | <a href=\"\
+  #45068066\" class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45068594\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45068841\" class=\"\
+  clicky\" aria-hidden=\"true\">prev</a> | <a href=\"#45068767\" class=\"clicky\"\
+  \ aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45068926\" n=\"7\"\
+  \ href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">&gt;So when you start the app\
+  \ again, SQLite sees said rollback journal, and - since it would be considered &quot;hot&quot;\
+  \ - applies it, effectively reverting the transaction that was supposedly already\
+  \ committed.<p>Guys. The journal would not be a hot journal though, as the hot journal\
+  \ selection only applies if the database is in a inconsistent state. Otherwise,\
+  \ the database knows from the ID of the journal not to reapply an already applied\
+  \ rollback journal. The process you are talking about ONLY happens when the journal\
+  \ database has been corrupted state, and it has to try and file a file to help recover\
+  \ the database.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45068926&amp;goto=item%3Fid%3D45066999%2345068926\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45069533\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"5\"><img src=\"s.gif\" height=\"1\" width=\"200\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45069533' href='vote?id=45069533&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=agwa\" class=\"hnuser\">agwa</a> <span class=\"age\" title=\"2025-08-29T21:21:59\
+  \ 1756502519\"><a href=\"item?id=45069533\">5 hours ago</a></span> <span id=\"unv_45069533\"\
+  ></span><span class=\"navs\"> | <a href=\"#45068066\" class=\"clicky\" aria-hidden=\"\
+  true\">root</a> | <a href=\"#45068926\" class=\"clicky\" aria-hidden=\"true\">parent</a>\
+  \ | <a href=\"#45069036\" class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"\
+  togg clicky\" id=\"45069533\" n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span\
+  \ class=\"onstory\"></span></span></span></div><br>\n<div class=\"comment\"><div\
+  \ class=\"commtext c00\">OK, I just tested it:<p>In terminal 1, I created a database\
+  \ and added a table to it:<p><pre><code>  $ sqlite3 testdb\n  sqlite&gt; create\
+  \ table test (col int);\n</code></pre>\nIn terminal 2, I attached gdb to sqlite3\
+  \ and set a breakpoint on unlink:<p><pre><code>  $ gdb sqlite3 `pidof sqlite3`\n\
+  \  (gdb) b unlink\n  (gdb) c\n</code></pre>\nBack in terminal 1, I inserted data\
+  \ into the table:<p><pre><code>  sqlite&gt; insert into test values(123);\n</code></pre>\n\
+  In terminal 3, I saved a copy of testdb-journal:<p><pre><code>  $ cp testdb-journal\
+  \ testdb-journal.save\n</code></pre>\nThen in terminal 2, I resumed executing sqlite3:<p><pre><code>\
+  \  (gdb) c\n</code></pre>\nIn terminal 1, the INSERT completed without error.<p>Back\
+  \ in terminal 3, I sent SIGKILL to sqlite3, simulating a power failure:<p><pre><code>\
+  \  $ killall -9 sqlite3\n</code></pre>\nI then restored testdb-journal, simulating\
+  \ what could happen after a power failure when the parent directory is not fsynced:<p><pre><code>\
+  \  $ mv testdb-journal.save testdb-journal\n</code></pre>\nI then opened testdb\
+  \ again and ran `SELECT * FROM test` and it returned zero rows.<p>This proves int_19h\
+  \ and I are right - if the journal file comes back, SQLite <i>will</i> apply it\
+  \ and roll back a committed transaction.<p>I then confirmed with strace that, as\
+  \ the documentation says, the directory is only fsynced after unlink when synchronous=EXTRA.\
+  \ It doesn&#x27;t happen with synchronous=FULL.  So you need synchronous=EXTRA to\
+  \ get durability in DELETE mode.</div><div class=\"reply\"><p><font size=\"1\"><u><a\
+  \ href=\"reply?id=45069533&amp;goto=item%3Fid%3D45066999%2345069533\" rel=\"nofollow\"\
+  >reply</a></u></font></div></div></td></tr></table></td></tr><tr class=\"athing\
+  \ comtr\" id=\"45069036\"><td><table border=\"0\"><tr><td class=\"ind\" indent=\"\
+  5\"><img src=\"s.gif\" height=\"1\" width=\"200\"></td><td valign=\"top\" class=\"\
+  votelinks\"><center><a id='up_45069036' href='vote?id=45069036&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=agwa\" class=\"hnuser\">agwa</a> <span class=\"age\" title=\"2025-08-29T20:30:02\
+  \ 1756499402\"><a href=\"item?id=45069036\">6 hours ago</a></span> <span id=\"unv_45069036\"\
+  ></span><span class=\"navs\"> | <a href=\"#45068066\" class=\"clicky\" aria-hidden=\"\
+  true\">root</a> | <a href=\"#45068926\" class=\"clicky\" aria-hidden=\"true\">parent</a>\
+  \ | <a href=\"#45069533\" class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"\
+  #45069188\" class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\"\
+  \ id=\"45069036\" n=\"4\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"\
+  onstory\"></span></span></span></div><br>\n<div class=\"comment\"><div class=\"\
+  commtext c00\">The docs list 5 conditions that all must be satisfied for the journal\
+  \ to be considered hot: <a href=\"https:&#x2F;&#x2F;www.sqlite.org&#x2F;atomiccommit.html#_hot_rollback_journals\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;www.sqlite.org&#x2F;atomiccommit.html#_hot_rollback_journ...</a><p>I\
+  \ believe they would all be satisfied.<p>I don&#x27;t see any mention of checking\
+  \ IDs.  Not saying you&#x27;re wrong - I think the docs could very well be wrong\
+  \ - but could you provide a citation for that behavior?</div><div class=\"reply\"\
+  ><p><font size=\"1\"><u><a href=\"reply?id=45069036&amp;goto=item%3Fid%3D45066999%2345069036\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45069079\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"6\"><img src=\"s.gif\" height=\"1\" width=\"240\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45069079' href='vote?id=45069079&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=NewsaHackO\" class=\"hnuser\">NewsaHackO</a> <span class=\"age\"\
+  \ title=\"2025-08-29T20:34:21 1756499661\"><a href=\"item?id=45069079\">6 hours\
+  \ ago</a></span> <span id=\"unv_45069079\"></span><span class=\"navs\"> | <a href=\"\
+  #45068066\" class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45069036\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45069188\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45069079\"\
+  \ n=\"3\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c5A\">Please read the entire document\
+  \ instead of just picking out sections; you will then be able to see where your\
+  \ misconceptions are occurring. You have attempted to make this same point three\
+  \ times, so I will say it for a third time; that section is about CORRUPTED databases,\
+  \ not database that are consistent after fsync.</div><div class=\"reply\"><p><font\
+  \ size=\"1\"><u><a href=\"reply?id=45069079&amp;goto=item%3Fid%3D45066999%2345069079\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45069182\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"7\"><img src=\"s.gif\" height=\"1\" width=\"280\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45069182' href='vote?id=45069182&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=agwa\" class=\"hnuser\">agwa</a> <span class=\"age\" title=\"2025-08-29T20:43:50\
+  \ 1756500230\"><a href=\"item?id=45069182\">6 hours ago</a></span> <span id=\"unv_45069182\"\
+  ></span><span class=\"navs\"> | <a href=\"#45068066\" class=\"clicky\" aria-hidden=\"\
+  true\">root</a> | <a href=\"#45069079\" class=\"clicky\" aria-hidden=\"true\">parent</a>\
+  \ | <a href=\"#45070422\" class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"\
+  togg clicky\" id=\"45069182\" n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span\
+  \ class=\"onstory\"></span></span></span></div><br>\n<div class=\"comment\"><div\
+  \ class=\"commtext c00\">I read the whole document. It doesn&#x27;t mention IDs\
+  \ anywhere.<p>If you&#x27;re not going to provide citations for your claims, yet\
+  \ criticize me for &quot;picking out sections&quot; when I provide citations, then\
+  \ continuing this conversation won&#x27;t be productive.</div><div class=\"reply\"\
+  ><p><font size=\"1\"><u><a href=\"reply?id=45069182&amp;goto=item%3Fid%3D45066999%2345069182\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45070422\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"7\"><img src=\"s.gif\" height=\"1\" width=\"280\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45070422' href='vote?id=45070422&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=aktiur\" class=\"hnuser\">aktiur</a> <span class=\"age\" title=\"\
+  2025-08-29T23:08:23 1756508903\"><a href=\"item?id=45070422\">3 hours ago</a></span>\
+  \ <span id=\"unv_45070422\"></span><span class=\"navs\"> | <a href=\"#45068066\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45069079\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45069182\" class=\"clicky\"\
+  \ aria-hidden=\"true\">prev</a> | <a href=\"#45069188\" class=\"clicky\" aria-hidden=\"\
+  true\">next</a> <a class=\"togg clicky\" id=\"45070422\" n=\"1\" href=\"javascript:void(0)\"\
+  >[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"\
+  comment\"><div class=\"commtext c00\">The text in this document also directly contradicts\
+  \ what you&#x27;re saying. Put another way: the presence of a hot journal is how\
+  \ SQLite determines the database might be corrupted.<p><a href=\"https:&#x2F;&#x2F;sqlite.org&#x2F;lockingv3.html#hot_journals\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;sqlite.org&#x2F;lockingv3.html#hot_journals</a></div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45070422&amp;goto=item%3Fid%3D45066999%2345070422\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45069188\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"5\"><img src=\"s.gif\" height=\"1\" width=\"200\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45069188' href='vote?id=45069188&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=int_19h\" class=\"hnuser\">int_19h</a> <span class=\"age\" title=\"\
+  2025-08-29T20:44:20 1756500260\"><a href=\"item?id=45069188\">6 hours ago</a></span>\
+  \ <span id=\"unv_45069188\"></span><span class=\"navs\"> | <a href=\"#45068066\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45068926\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45069036\" class=\"clicky\"\
+  \ aria-hidden=\"true\">prev</a> | <a href=\"#45068767\" class=\"clicky\" aria-hidden=\"\
+  true\">next</a> <a class=\"togg clicky\" id=\"45069188\" n=\"1\" href=\"javascript:void(0)\"\
+  >[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"\
+  comment\"><div class=\"commtext c00\">&gt; Otherwise, the database knows from the\
+  \ ID of the journal not to reapply an already applied rollback journal.<p>But it&#x27;s\
+  \ not &quot;already applied&quot;, that&#x27;s the whole point. The transaction\
+  \ was <i>committed</i>, not rolled back, so the changes in transaction were persisted\
+  \ to disk and the journal was just thrown away. If it magically reappears again,\
+  \ how is SQLite supposed to know that it needs to be discarded again rather than\
+  \ applied to revert the change?</div><div class=\"reply\"><p><font size=\"1\"><u><a\
+  \ href=\"reply?id=45069188&amp;goto=item%3Fid%3D45066999%2345069188\" rel=\"nofollow\"\
+  >reply</a></u></font></div></div></td></tr></table></td></tr><tr class=\"athing\
+  \ comtr\" id=\"45068767\"><td><table border=\"0\"><tr><td class=\"ind\" indent=\"\
+  3\"><img src=\"s.gif\" height=\"1\" width=\"120\"></td><td valign=\"top\" class=\"\
+  votelinks\"><center><a id='up_45068767' href='vote?id=45068767&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=agwa\" class=\"hnuser\">agwa</a> <span class=\"age\" title=\"2025-08-29T20:04:27\
+  \ 1756497867\"><a href=\"item?id=45068767\">6 hours ago</a></span> <span id=\"unv_45068767\"\
+  ></span><span class=\"navs\"> | <a href=\"#45068066\" class=\"clicky\" aria-hidden=\"\
+  true\">root</a> | <a href=\"#45068352\" class=\"clicky\" aria-hidden=\"true\">parent</a>\
+  \ | <a href=\"#45068594\" class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"\
+  #45068720\" class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\"\
+  \ id=\"45068767\" n=\"2\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"\
+  onstory\"></span></span></span></div><br>\n<div class=\"comment\"><div class=\"\
+  commtext c00\">I&#x27;m pretty sure I understand what durability means; the definition\
+  \ is not hard - <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Durability_(database_systems)\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Durability_(database_systems)</a><p>It&#x27;s\
+  \ possible I&#x27;ve misunderstood how DELETE mode works.  But here&#x27;s the thing\
+  \ - I shouldn&#x27;t have to understand how DELETE mode works to know what SQLite\
+  \ setting I need to use to get durability.  Unfortunately, the SQLite docs don&#x27;t\
+  \ clearly say what guarantees each setting provides - instead they talk about about\
+  \ what SQLite does when you choose the setting, leaving the reader to try to figure\
+  \ out if those actions provide durability.  And the docs really make it seem like\
+  \ you need synchronous=EXTRA in DELETE mode to get durability, for the reasons explained\
+  \ above.<p>This is a docs problem; I&#x27;m not saying SQLite is buggy.</div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45068767&amp;goto=item%3Fid%3D45066999%2345068767\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45069012\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"4\"><img src=\"s.gif\" height=\"1\" width=\"160\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45069012' href='vote?id=45069012&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=NewsaHackO\" class=\"hnuser\">NewsaHackO</a> <span class=\"age\"\
+  \ title=\"2025-08-29T20:28:20 1756499300\"><a href=\"item?id=45069012\">6 hours\
+  \ ago</a></span> <span id=\"unv_45069012\"></span><span class=\"navs\"> | <a href=\"\
+  #45068066\" class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45068767\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45068720\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45069012\"\
+  \ n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c73\">This may just be a expectations\
+  \ difference then. I would fully expect a developer to read the docs and know how\
+  \ a settings works to know what guarantees it has.</div><div class=\"reply\"><p><font\
+  \ size=\"1\"><u><a href=\"reply?id=45069012&amp;goto=item%3Fid%3D45066999%2345069012\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068720\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068720' href='vote?id=45068720&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=diekhans\" class=\"hnuser\">diekhans</a> <span class=\"age\" title=\"\
+  2025-08-29T20:00:55 1756497655\"><a href=\"item?id=45068720\">6 hours ago</a></span>\
+  \ <span id=\"unv_45068720\"></span><span class=\"navs\"> | <a href=\"#45068066\"\
+  \ class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"#45069086\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45068720\"\
+  \ n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">It seems like a bug report on\
+  \ what is not clear in the documentation would be highly useful.</div><div class=\"\
+  reply\"><p><font size=\"1\"><u><a href=\"reply?id=45068720&amp;goto=item%3Fid%3D45066999%2345068720\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45069086\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45069086' href='vote?id=45069086&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=layer8\" class=\"hnuser\">layer8</a> <span class=\"age\" title=\"\
+  2025-08-29T20:34:46 1756499686\"><a href=\"item?id=45069086\">6 hours ago</a></span>\
+  \ <span id=\"unv_45069086\"></span><span class=\"navs\"> | <a href=\"#45068720\"\
+  \ class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"#45068259\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45069086\"\
+  \ n=\"7\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">Durability also requires the\
+  \ file system implementation and the disk to do the right thing on <i>fsync</i>,\
+  \ which, if I recall past discussions correctly, isn\u2019t a given.</div><div class=\"\
+  reply\"><p><font size=\"1\"><u><a href=\"reply?id=45069086&amp;goto=item%3Fid%3D45066999%2345069086\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45070027\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45070027' href='vote?id=45070027&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=ericbarrett\" class=\"hnuser\">ericbarrett</a> <span class=\"age\"\
+  \ title=\"2025-08-29T22:14:05 1756505645\"><a href=\"item?id=45070027\">4 hours\
+  \ ago</a></span> <span id=\"unv_45070027\"></span><span class=\"navs\"> | <a href=\"\
+  #45069086\" class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45070513\"\
+  \ class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"\
+  45070027\" n=\"5\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"\
+  ></span></span></span></div><br>\n<div class=\"comment\"><div class=\"commtext c00\"\
+  >There are some older fsync() bugs (as famously explored by Postgres developers:\
+  \ <a href=\"https:&#x2F;&#x2F;wiki.postgresql.org&#x2F;wiki&#x2F;Fsync_Errors\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;wiki.postgresql.org&#x2F;wiki&#x2F;Fsync_Errors</a>\
+  \ ) but I&#x27;m not aware of any modern mainstream kernel where this is broken.\
+  \ If I&#x27;m wrong, please tell me!<p>An application that <i>really</i> wants confidence\
+  \ in a write\u2014to the extent that the underlying device and drivers allow\u2014\
+  should use O_DIRECT. Or maybe there is a modern equivalent with io-uring. But that\
+  \ is not easy engineering :)</div><div class=\"reply\"><p><font size=\"1\"><u><a\
+  \ href=\"reply?id=45070027&amp;goto=item%3Fid%3D45066999%2345070027\" rel=\"nofollow\"\
+  >reply</a></u></font></div></div></td></tr></table></td></tr><tr class=\"athing\
+  \ comtr\" id=\"45070738\"><td><table border=\"0\"><tr><td class=\"ind\" indent=\"\
+  2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"top\" class=\"\
+  votelinks\"><center><a id='up_45070738' href='vote?id=45070738&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=vlovich123\" class=\"hnuser\">vlovich123</a> <span class=\"age\"\
+  \ title=\"2025-08-29T23:59:19 1756511959\"><a href=\"item?id=45070738\">2 hours\
+  \ ago</a></span> <span id=\"unv_45070738\"></span><span class=\"navs\"> | <a href=\"\
+  #45069086\" class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45070027\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45070458\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45070738\"\
+  \ n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">O_DIRECT in now way absolves\
+  \ you from needing to call fsync because fsync ALSO sends a signal to the storage\
+  \ device to flush the buffer if it has anything which is important for durability.<p>What\
+  \ OP is referring to is that some drives ignore that signal for performance reasons\
+  \ and there\u2019s nothing SW can do to solve that part.<p>io_uring in no way changes\
+  \ the rules here.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45070738&amp;goto=item%3Fid%3D45066999%2345070738\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45070458\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45070458' href='vote?id=45070458&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=codys\" class=\"hnuser\">codys</a> <span class=\"age\" title=\"\
+  2025-08-29T23:13:22 1756509202\"><a href=\"item?id=45070458\">3 hours ago</a></span>\
+  \ <span id=\"unv_45070458\"></span><span class=\"navs\"> | <a href=\"#45069086\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45070027\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45070738\" class=\"clicky\"\
+  \ aria-hidden=\"true\">prev</a> | <a href=\"#45070502\" class=\"clicky\" aria-hidden=\"\
+  true\">next</a> <a class=\"togg clicky\" id=\"45070458\" n=\"1\" href=\"javascript:void(0)\"\
+  >[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"\
+  comment\"><div class=\"commtext c00\">Nothing prevents using O_DIRECT as an open-flag\
+  \ for a fd used in other io_uring operations.<p>But I&#x27;m not sure I&#x27;d necessarily\
+  \ think of O_DIRECT as a way of improving &quot;confidence in a write&quot;. It&#x27;s\
+  \ a way to get a specific behavior.</div><div class=\"reply\"><p><font size=\"1\"\
+  ><u><a href=\"reply?id=45070458&amp;goto=item%3Fid%3D45066999%2345070458\" rel=\"\
+  nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr class=\"\
+  athing comtr\" id=\"45070502\"><td><table border=\"0\"><tr><td class=\"ind\" indent=\"\
+  2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"top\" class=\"\
+  votelinks\"><center><a id='up_45070502' href='vote?id=45070502&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=geertj\" class=\"hnuser\">geertj</a> <span class=\"age\" title=\"\
+  2025-08-29T23:20:19 1756509619\"><a href=\"item?id=45070502\">3 hours ago</a></span>\
+  \ <span id=\"unv_45070502\"></span><span class=\"navs\"> | <a href=\"#45069086\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45070027\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45070458\" class=\"clicky\"\
+  \ aria-hidden=\"true\">prev</a> | <a href=\"#45070452\" class=\"clicky\" aria-hidden=\"\
+  true\">next</a> <a class=\"togg clicky\" id=\"45070502\" n=\"1\" href=\"javascript:void(0)\"\
+  >[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"\
+  comment\"><div class=\"commtext c00\">Technically I think you need O_SYNC. O_DIRECT\
+  \ does pretty much the same but its intention is different.</div><div class=\"reply\"\
+  ><p><font size=\"1\"><u><a href=\"reply?id=45070502&amp;goto=item%3Fid%3D45066999%2345070502\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45070452\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45070452' href='vote?id=45070452&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=jitl\" class=\"hnuser\">jitl</a> <span class=\"age\" title=\"2025-08-29T23:12:44\
+  \ 1756509164\"><a href=\"item?id=45070452\">3 hours ago</a></span> <span id=\"unv_45070452\"\
+  ></span><span class=\"navs\"> | <a href=\"#45069086\" class=\"clicky\" aria-hidden=\"\
+  true\">root</a> | <a href=\"#45070027\" class=\"clicky\" aria-hidden=\"true\">parent</a>\
+  \ | <a href=\"#45070502\" class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"\
+  #45070513\" class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\"\
+  \ id=\"45070452\" n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"\
+  onstory\"></span></span></span></div><br>\n<div class=\"comment\"><div class=\"\
+  commtext c00\">macOS is a popular OS that has a fast and loose relationship to that\
+  \ syscall without F_FULLFSYNC</div><div class=\"reply\"><p><font size=\"1\"><u><a\
+  \ href=\"reply?id=45070452&amp;goto=item%3Fid%3D45066999%2345070452\" rel=\"nofollow\"\
+  >reply</a></u></font></div></div></td></tr></table></td></tr><tr class=\"athing\
+  \ comtr\" id=\"45070513\"><td><table border=\"0\"><tr><td class=\"ind\" indent=\"\
+  1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"top\" class=\"\
+  votelinks\"><center><a id='up_45070513' href='vote?id=45070513&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=eatonphil\" class=\"hnuser\">eatonphil</a> <span class=\"age\"\
+  \ title=\"2025-08-29T23:22:21 1756509741\"><a href=\"item?id=45070513\">3 hours\
+  \ ago</a></span> <span id=\"unv_45070513\"></span><span class=\"navs\"> | <a href=\"\
+  #45069086\" class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45070027\"\
+  \ class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"#45068259\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45070513\"\
+  \ n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">Take a look at Alex Miller&#x27;s\
+  \ diagrams for what function calls are actually doing on various systems.<p><a href=\"\
+  https:&#x2F;&#x2F;transactional.blog&#x2F;how-to-learn&#x2F;disk-io\" rel=\"nofollow\"\
+  >https:&#x2F;&#x2F;transactional.blog&#x2F;how-to-learn&#x2F;disk-io</a></div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45070513&amp;goto=item%3Fid%3D45066999%2345070513\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068259\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068259' href='vote?id=45068259&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=tiffanyh\" class=\"hnuser\">tiffanyh</a> <span class=\"age\" title=\"\
+  2025-08-29T19:19:37 1756495177\"><a href=\"item?id=45068259\">7 hours ago</a></span>\
+  \ <span id=\"unv_45068259\"></span><span class=\"navs\"> | <a href=\"#45069086\"\
+  \ class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"#45067616\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45068259\"\
+  \ n=\"3\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">SQLite is an incredible piece\
+  \ of software, and its commitment to backward compatibility is deeply admirable.\
+  \ But that same promise has also become a limitation.<p>v3.0 was first released\
+  \ in 2004\u2014over 20 years ago\u2014and the industry has changed dramatically\
+  \ since then.<p>I can\u2019t help but wish for a \u201Cv4.0\u201D release: one that\
+  \ deliberately breaks backward compatibility and outdated defaults, in order to\
+  \ offer a cleaner, more modern foundation.<p>Note: I&#x27;m not asking for new functionality\
+  \ per se. But just a version of SQLite that defaulted to how it should be used,\
+  \ deployed in 2025.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"\
+  reply?id=45068259&amp;goto=item%3Fid%3D45066999%2345068259\" rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068441\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068441' href='vote?id=45068441&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=umpalumpaaa\" class=\"hnuser\">umpalumpaaa</a> <span class=\"age\"\
+  \ title=\"2025-08-29T19:36:53 1756496213\"><a href=\"item?id=45068441\">7 hours\
+  \ ago</a></span> <span id=\"unv_45068441\"></span><span class=\"navs\"> | <a href=\"\
+  #45068259\" class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45067616\"\
+  \ class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"\
+  45068441\" n=\"2\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"\
+  ></span></span></span></div><br>\n<div class=\"comment\"><div class=\"commtext c00\"\
+  >There was an attempt&#x2F;experiment to develop SQLite 4:\n<a href=\"https:&#x2F;&#x2F;sqlite.org&#x2F;src4&#x2F;doc&#x2F;trunk&#x2F;www&#x2F;index.wiki\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;sqlite.org&#x2F;src4&#x2F;doc&#x2F;trunk&#x2F;www&#x2F;index.wiki</a></div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45068441&amp;goto=item%3Fid%3D45066999%2345068441\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45070381\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45070381' href='vote?id=45070381&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=sgbeal\" class=\"hnuser\">sgbeal</a> <span class=\"age\" title=\"\
+  2025-08-29T23:01:32 1756508492\"><a href=\"item?id=45070381\">3 hours ago</a></span>\
+  \ <span id=\"unv_45070381\"></span><span class=\"navs\"> | <a href=\"#45068259\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45068441\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45067616\" class=\"clicky\"\
+  \ aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45070381\" n=\"1\"\
+  \ href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">The focus of that experiment\
+  \ was to find out of LSM-based storage[^1] would prove to be faster. It turned out\
+  \ that LSM, for SQLite&#x27;s workloads, did not provide enough benefit to justify\
+  \ the upheaval.<p>[^1]: <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Log-structured_merge-tree\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Log-structured_merge-tree</a></div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45070381&amp;goto=item%3Fid%3D45066999%2345070381\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr coll\" id=\"45067616\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"\
+  top\" class=\"votelinks nosee\"><center><img src=\"s.gif\" height=\"1\" width=\"\
+  14\"></center></td><td class=\"default\"><div style=\"margin-top:2px; margin-bottom:-10px;\"\
+  ><span class=\"comhead\"><a href=\"user?id=topspin\" class=\"hnuser\">topspin</a>\
+  \ <span class=\"age\" title=\"2025-08-29T18:19:19 1756491559\"><a href=\"item?id=45067616\"\
+  >8 hours ago</a></span> <span id=\"unv_45067616\"></span><span class=\"navs\"> |\
+  \ <a href=\"#45068259\" class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"\
+  #45068250\" class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\"\
+  \ id=\"45067616\" n=\"5\" href=\"javascript:void(0)\">[5 more]</a><span class=\"\
+  onstory\"></span></span></span></div><br>\n<div class=\"comment noshow\">[flagged]<div\
+  \ class=\"reply\"><p><font size=\"1\"></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr noshow\" id=\"45067746\"><td><table border=\"0\"><tr><td\
+  \ class=\"ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td\
+  \ valign=\"top\" class=\"votelinks\"><center><a id='up_45067746' href='vote?id=45067746&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=3eb7988a1663\" class=\"hnuser\">3eb7988a1663</a> <span class=\"\
+  age\" title=\"2025-08-29T18:31:33 1756492293\"><a href=\"item?id=45067746\">8 hours\
+  \ ago</a></span> <span id=\"unv_45067746\"></span><span class=\"navs\"> | <a href=\"\
+  #45067616\" class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45067674\"\
+  \ class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"\
+  45067746\" n=\"3\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"\
+  ></span></span></span></div><br>\n<div class=\"comment\"><div class=\"commtext c00\"\
+  >It is the weekend. Most people use this site to avoid doing work.<p>Edit: whoops,\
+  \ it is Friday! Gave myself a long weekend, and was just default thinking it is\
+  \ Saturday.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45067746&amp;goto=item%3Fid%3D45066999%2345067746\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr noshow\" id=\"45067769\"><td><table border=\"0\"><tr><td\
+  \ class=\"ind\" indent=\"2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td\
+  \ valign=\"top\" class=\"votelinks\"><center><a id='up_45067769' href='vote?id=45067769&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=lyjackal\" class=\"hnuser\">lyjackal</a> <span class=\"age\" title=\"\
+  2025-08-29T18:33:43 1756492423\"><a href=\"item?id=45067769\">8 hours ago</a></span>\
+  \ <span id=\"unv_45067769\"></span><span class=\"navs\"> | <a href=\"#45067616\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45067746\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45067674\" class=\"clicky\"\
+  \ aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45067769\" n=\"2\"\
+  \ href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">it&#x27;s Friday, and I&#x27;m\
+  \ avoiding doing work</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"\
+  reply?id=45067769&amp;goto=item%3Fid%3D45066999%2345067769\" rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr noshow\" id=\"45067817\"><td><table border=\"0\"><tr><td\
+  \ class=\"ind\" indent=\"3\"><img src=\"s.gif\" height=\"1\" width=\"120\"></td><td\
+  \ valign=\"top\" class=\"votelinks\"><center><a id='up_45067817' href='vote?id=45067817&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=3eb7988a1663\" class=\"hnuser\">3eb7988a1663</a> <span class=\"\
+  age\" title=\"2025-08-29T18:38:22 1756492702\"><a href=\"item?id=45067817\">8 hours\
+  \ ago</a></span> <span id=\"unv_45067817\"></span><span class=\"navs\"> | <a href=\"\
+  #45067616\" class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45067769\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45067674\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45067817\"\
+  \ n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">Ha! Whelp, it is my weekend.</div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45067817&amp;goto=item%3Fid%3D45066999%2345067817\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr coll noshow\" id=\"45067674\"><td><table border=\"0\"><tr><td\
+  \ class=\"ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td\
+  \ valign=\"top\" class=\"votelinks nosee\"><center><img src=\"s.gif\" height=\"\
+  1\" width=\"14\"></center></td><td class=\"default\"><div style=\"margin-top:2px;\
+  \ margin-bottom:-10px;\"><span class=\"comhead\"><a href=\"user?id=meindnoch\" class=\"\
+  hnuser\">meindnoch</a> <span class=\"age\" title=\"2025-08-29T18:24:06 1756491846\"\
+  ><a href=\"item?id=45067674\">8 hours ago</a></span> <span id=\"unv_45067674\"></span><span\
+  \ class=\"navs\"> | <a href=\"#45067616\" class=\"clicky\" aria-hidden=\"true\"\
+  >parent</a> | <a href=\"#45067746\" class=\"clicky\" aria-hidden=\"true\">prev</a>\
+  \ | <a href=\"#45068250\" class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"\
+  togg clicky\" id=\"45067674\" n=\"2\" href=\"javascript:void(0)\">[2 more]</a><span\
+  \ class=\"onstory\"></span></span></span></div><br>\n<div class=\"comment noshow\"\
+  >[flagged]<div class=\"reply\"><p><font size=\"1\"></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr noshow\" id=\"45067716\"><td><table border=\"0\"><tr><td\
+  \ class=\"ind\" indent=\"2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td\
+  \ valign=\"top\" class=\"votelinks\"><center><a id='up_45067716' href='vote?id=45067716&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=anotherhue\" class=\"hnuser\">anotherhue</a> <span class=\"age\"\
+  \ title=\"2025-08-29T18:28:09 1756492089\"><a href=\"item?id=45067716\">8 hours\
+  \ ago</a></span> <span id=\"unv_45067716\"></span><span class=\"navs\"> | <a href=\"\
+  #45067616\" class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45067674\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45068250\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45067716\"\
+  \ n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">I&#x27;m laughing but mostly\
+  \ crying.<p>Reliability is a dirty word, because it almost always comes at the cost\
+  \ of &#x27;growth&#x27;.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"\
+  reply?id=45067716&amp;goto=item%3Fid%3D45066999%2345067716\" rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068250\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068250' href='vote?id=45068250&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=d1l\" class=\"hnuser\">d1l</a> <span class=\"age\" title=\"2025-08-29T19:18:45\
+  \ 1756495125\"><a href=\"item?id=45068250\">7 hours ago</a></span> <span id=\"unv_45068250\"\
+  ></span><span class=\"navs\"> | <a href=\"#45067616\" class=\"clicky\" aria-hidden=\"\
+  true\">prev</a> | <a href=\"#45068192\" class=\"clicky\" aria-hidden=\"true\">next</a>\
+  \ <a class=\"togg clicky\" id=\"45068250\" n=\"5\" href=\"javascript:void(0)\">[\u2013\
+  ]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"comment\"\
+  ><div class=\"commtext c73\">This is disingenuous and probably was written this\
+  \ way for HN cred and clicks. Sqlite&#x27;s test suite simulates just about every\
+  \ kind of failure you can imagine - this document is worth reading if you have any\
+  \ doubts: <a href=\"https:&#x2F;&#x2F;www.sqlite.org&#x2F;atomiccommit.html\" rel=\"\
+  nofollow\">https:&#x2F;&#x2F;www.sqlite.org&#x2F;atomiccommit.html</a></div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45068250&amp;goto=item%3Fid%3D45066999%2345068250\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45069258\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45069258' href='vote?id=45069258&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=eatonphil\" class=\"hnuser\">eatonphil</a> <span class=\"age\"\
+  \ title=\"2025-08-29T20:51:59 1756500719\"><a href=\"item?id=45069258\">5 hours\
+  \ ago</a></span> <span id=\"unv_45069258\"></span><span class=\"navs\"> | <a href=\"\
+  #45068250\" class=\"clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45068324\"\
+  \ class=\"clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"\
+  45069258\" n=\"3\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"\
+  ></span></span></span></div><br>\n<div class=\"comment\"><div class=\"commtext c00\"\
+  >&gt; Sqlite&#x27;s test suite simulates just about every kind of failure you can\
+  \ imagine<p>The page you link even mentions scenarios <i>they know about</i> that\
+  \ do happen and that they still assume won&#x27;t happen. So even sqlite doesn&#x27;t\
+  \ make anywhere near as strong a claim as you make.<p>&gt; SQLite assumes that the\
+  \ operating system will buffer writes and that a write request will return before\
+  \ data has actually been stored in the mass storage device. SQLite further assumes\
+  \ that write operations will be reordered by the operating system. For this reason,\
+  \ SQLite does a &quot;flush&quot; or &quot;fsync&quot; operation at key points.\
+  \ SQLite assumes that the flush or fsync will not return until all pending write\
+  \ operations for the file that is being flushed have completed. We are told that\
+  \ the flush and fsync primitives are broken on some versions of Windows and Linux.\
+  \ This is unfortunate. It opens SQLite up to the possibility of database corruption\
+  \ following a power loss in the middle of a commit. However, there is nothing that\
+  \ SQLite can do to test for or remedy the situation. SQLite assumes that the operating\
+  \ system that it is running on works as advertised. If that is not quite the case,\
+  \ well then hopefully you will not lose power too often.</div><div class=\"reply\"\
+  ><p><font size=\"1\"><u><a href=\"reply?id=45069258&amp;goto=item%3Fid%3D45066999%2345069258\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45071209\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45071209' href='vote?id=45071209&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=chasil\" class=\"hnuser\">chasil</a> <span class=\"age\" title=\"\
+  2025-08-30T01:43:22 1756518202\"><a href=\"item?id=45071209\">1 hour ago</a></span>\
+  \ <span id=\"unv_45071209\"></span><span class=\"navs\"> | <a href=\"#45068250\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45069258\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45070742\" class=\"clicky\"\
+  \ aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45071209\" n=\"1\"\
+  \ href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">There was a time that Oracle\
+  \ databases used raw disk partitions to minimize the influence of the OS in what\
+  \ happens between memory and storage. It was more for multiple instances looking\
+  \ at the same SCSI device (Oracle Parallel Server).<p>I don&#x27;t think that is\
+  \ often done now.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45071209&amp;goto=item%3Fid%3D45066999%2345071209\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45070742\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45070742' href='vote?id=45070742&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=liuliu\" class=\"hnuser\">liuliu</a> <span class=\"age\" title=\"\
+  2025-08-29T23:59:37 1756511977\"><a href=\"item?id=45070742\">2 hours ago</a></span>\
+  \ <span id=\"unv_45070742\"></span><span class=\"navs\"> | <a href=\"#45068250\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45069258\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> | <a href=\"#45071209\" class=\"clicky\"\
+  \ aria-hidden=\"true\">prev</a> | <a href=\"#45068324\" class=\"clicky\" aria-hidden=\"\
+  true\">next</a> <a class=\"togg clicky\" id=\"45070742\" n=\"1\" href=\"javascript:void(0)\"\
+  >[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"\
+  comment\"><div class=\"commtext c00\">&gt; So even sqlite doesn&#x27;t make anywhere\
+  \ near as strong a claim as you make.<p>And? If you write to a disk and later this\
+  \ disk is missing, you don&#x27;t have durability. SQLite cannot automatically help\
+  \ you to commit your writes to a satellite for durability against species ending\
+  \ event on Earth, and hence its &quot;durability&quot; has limits exactly as spelled\
+  \ out by them.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45070742&amp;goto=item%3Fid%3D45066999%2345070742\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068324\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068324' href='vote?id=45068324&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=agwa\" class=\"hnuser\">agwa</a> <span class=\"age\" title=\"2025-08-29T19:25:31\
+  \ 1756495531\"><a href=\"item?id=45068324\">7 hours ago</a></span> <span id=\"unv_45068324\"\
+  ></span><span class=\"navs\"> | <a href=\"#45068250\" class=\"clicky\" aria-hidden=\"\
+  true\">parent</a> | <a href=\"#45069258\" class=\"clicky\" aria-hidden=\"true\"\
+  >prev</a> | <a href=\"#45068192\" class=\"clicky\" aria-hidden=\"true\">next</a>\
+  \ <a class=\"togg clicky\" id=\"45068324\" n=\"1\" href=\"javascript:void(0)\">[\u2013\
+  ]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"comment\"\
+  ><div class=\"commtext c00\">That document addresses atomicity, not durability,\
+  \ and is thus non-responsive to my concerns.</div><div class=\"reply\"><p><font\
+  \ size=\"1\"><u><a href=\"reply?id=45068324&amp;goto=item%3Fid%3D45066999%2345068324\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068192\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068192' href='vote?id=45068192&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=bawolff\" class=\"hnuser\">bawolff</a> <span class=\"age\" title=\"\
+  2025-08-29T19:13:57 1756494837\"><a href=\"item?id=45068192\">7 hours ago</a></span>\
+  \ <span id=\"unv_45068192\"></span><span class=\"navs\"> | <a href=\"#45068250\"\
+  \ class=\"clicky\" aria-hidden=\"true\">prev</a> | <a href=\"#45067699\" class=\"\
+  clicky\" aria-hidden=\"true\">next</a> <a class=\"togg clicky\" id=\"45068192\"\
+  \ n=\"2\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c9C\">I can&#x27;t help but feel that\
+  \ the difference to other DBs is that they just don&#x27;t have these knobs or tell\
+  \ you at all.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45068192&amp;goto=item%3Fid%3D45066999%2345068192\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45068210\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45068210' href='vote?id=45068210&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=agwa\" class=\"hnuser\">agwa</a> <span class=\"age\" title=\"2025-08-29T19:15:48\
+  \ 1756494948\"><a href=\"item?id=45068210\">7 hours ago</a></span> <span id=\"unv_45068210\"\
+  ></span><span class=\"navs\"> | <a href=\"#45068192\" class=\"clicky\" aria-hidden=\"\
+  true\">parent</a> | <a href=\"#45067699\" class=\"clicky\" aria-hidden=\"true\"\
+  >next</a> <a class=\"togg clicky\" id=\"45068210\" n=\"1\" href=\"javascript:void(0)\"\
+  >[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n<div class=\"\
+  comment\"><div class=\"commtext c00\">PostgreSQL has the knobs and I find the documentation\
+  \ about them very clear: <a href=\"https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;wal-async-commit.html\"\
+  \ rel=\"nofollow\">https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;wal-async-commit.htm...</a></div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45068210&amp;goto=item%3Fid%3D45066999%2345068210\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45067699\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"0\"><img src=\"s.gif\" height=\"1\" width=\"0\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45067699' href='vote?id=45067699&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=cenamus\" class=\"hnuser\">cenamus</a> <span class=\"age\" title=\"\
+  2025-08-29T18:27:00 1756492020\"><a href=\"item?id=45067699\">8 hours ago</a></span>\
+  \ <span id=\"unv_45067699\"></span><span class=\"navs\"> | <a href=\"#45068192\"\
+  \ class=\"clicky\" aria-hidden=\"true\">prev</a> <a class=\"togg clicky\" id=\"\
+  45067699\" n=\"3\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"\
+  ></span></span></span></div><br>\n<div class=\"comment\"><div class=\"commtext cAE\"\
+  >So this article ask exactly the same as the reply do Dr Hipps comment, just in\
+  \ a 1000 words, instead of 10? Whether the docs are out of sync?</div><div class=\"\
+  reply\"><p><font size=\"1\"><u><a href=\"reply?id=45067699&amp;goto=item%3Fid%3D45066999%2345067699\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45067941\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"1\"><img src=\"s.gif\" height=\"1\" width=\"40\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45067941' href='vote?id=45067941&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=topspin\" class=\"hnuser\">topspin</a> <span class=\"age\" title=\"\
+  2025-08-29T18:50:10 1756493410\"><a href=\"item?id=45067941\">7 hours ago</a></span>\
+  \ <span id=\"unv_45067941\"></span><span class=\"navs\"> | <a href=\"#45067699\"\
+  \ class=\"clicky\" aria-hidden=\"true\">parent</a> <a class=\"togg clicky\" id=\"\
+  45067941\" n=\"2\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"\
+  ></span></span></span></div><br>\n<div class=\"comment\"><div class=\"commtext c9C\"\
+  >&gt; Whether the docs are out of sync?<p>Were this a one off, you would have a\
+  \ point.  It isn&#x27;t, however.  My experience over many years has been that you\
+  \ can&#x27;t ever be certain about what is actually going on, based on the documentation\
+  \ alone, and that you wind up in Reddit and Stack Overflow and a plethora of blog\
+  \ posts attempting to figure it out.  With LLMs, we have only more sources of contradictory\
+  \ and chronically obsolescent input.<p>There is an actual problem here.  However\
+  \ I can see that, based on the contributions from the SQLite downmod mafia, this\
+  \ talk isn&#x27;t welcome, so I&#x27;m off to some other thing.  Have a nice weekend,\
+  \ I suppose.</div><div class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45067941&amp;goto=item%3Fid%3D45066999%2345067941\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr><tr\
+  \ class=\"athing comtr\" id=\"45067977\"><td><table border=\"0\"><tr><td class=\"\
+  ind\" indent=\"2\"><img src=\"s.gif\" height=\"1\" width=\"80\"></td><td valign=\"\
+  top\" class=\"votelinks\"><center><a id='up_45067977' href='vote?id=45067977&amp;how=up&amp;goto=item%3Fid%3D45066999'><div\
+  \ class='votearrow' title='upvote'></div></a></center></td><td class=\"default\"\
+  ><div style=\"margin-top:2px; margin-bottom:-10px;\"><span class=\"comhead\"><a\
+  \ href=\"user?id=mtmail\" class=\"hnuser\">mtmail</a> <span class=\"age\" title=\"\
+  2025-08-29T18:53:37 1756493617\"><a href=\"item?id=45067977\">7 hours ago</a></span>\
+  \ <span id=\"unv_45067977\"></span><span class=\"navs\"> | <a href=\"#45067699\"\
+  \ class=\"clicky\" aria-hidden=\"true\">root</a> | <a href=\"#45067941\" class=\"\
+  clicky\" aria-hidden=\"true\">parent</a> <a class=\"togg clicky\" id=\"45067977\"\
+  \ n=\"1\" href=\"javascript:void(0)\">[\u2013]</a><span class=\"onstory\"></span></span></span></div><br>\n\
+  <div class=\"comment\"><div class=\"commtext c00\">&gt; the SQLite downmod mafia<p>Oh,\
+  \ come on. There&#x27;s no open or secret attempt at censoring talk about sqlite\
+  \ on HN. (The story is #11 on the frontpage the minute the comment was made.)</div><div\
+  \ class=\"reply\"><p><font size=\"1\"><u><a href=\"reply?id=45067977&amp;goto=item%3Fid%3D45066999%2345067977\"\
+  \ rel=\"nofollow\">reply</a></u></font></div></div></td></tr></table></td></tr></table><br><br>\n\
+  </td></tr><tr><td><img src=\"s.gif\" height=\"10\" width=\"0\"><table width=\"100%\"\
+  \ cellspacing=\"0\" cellpadding=\"1\"><tr><td bgcolor=\"#ff6600\"></td></tr></table><br>\n\
+  <center><span class=\"yclinks\"><a href=\"newsguidelines.html\">Guidelines</a> |\
+  \ <a href=\"newsfaq.html\">FAQ</a> | <a href=\"lists\">Lists</a> | <a href=\"https://github.com/HackerNews/API\"\
+  >API</a> | <a href=\"security.html\">Security</a> | <a href=\"https://www.ycombinator.com/legal/\"\
+  >Legal</a> | <a href=\"https://www.ycombinator.com/apply/\">Apply to YC</a> | <a\
+  \ href=\"mailto:hn@ycombinator.com\">Contact</a></span><br><br>\n<form method=\"\
+  get\" action=\"//hn.algolia.com/\">Search: <input type=\"text\" name=\"q\" size=\"\
+  17\" autocorrect=\"off\" spellcheck=\"false\" autocapitalize=\"off\" autocomplete=\"\
+  off\"></form></center></td></tr></table></center></body><script type=\"text/javascript\"\
+  \ src=\"hn.js?rdkg5pOPauT7LmsdOtnz\"></script></html>"
+label: null
